@@ -51,6 +51,11 @@ final class ModelState: ObservableObject, Identifiable {
         self.chatState = chatState
     }
 
+    // Expose local base path for engine loading in tools (e.g., benchmarking)
+    var localBasePath: String {
+        return modelLocalBaseURL.path()
+    }
+
     func checkModelDownloadState(modelURL: URL?) {
         createModelFolderIfNeeded()
 

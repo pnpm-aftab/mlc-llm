@@ -22,8 +22,16 @@
 		C0D643B729F99A80004DDAA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0D643B629F99A80004DDAA4 /* Assets.xcassets */; };
 		C0D643BA29F99A80004DDAA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0D643B929F99A80004DDAA4 /* Preview Assets.xcassets */; };
 		C0D643C429F99B07004DDAA4 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D643C229F99B07004DDAA4 /* ChatView.swift */; };
+		F00100012C8A000000000001 /* PromptRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100002C8A000000000001 /* PromptRepository.swift */; };
+		F00100032C8A000000000002 /* BenchmarkRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100022C8A000000000002 /* BenchmarkRunner.swift */; };
+		F00100052C8A000000000003 /* BenchmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100042C8A000000000003 /* BenchmarkView.swift */; };
+		F00100072C8A000000000004 /* model-mapping.json in Resources */ = {isa = PBXBuildFile; fileRef = F00100062C8A000000000004 /* model-mapping.json */; };
+		F00100082C8A000000000005 /* prompts.json in Resources */ = {isa = PBXBuildFile; fileRef = F00100092C8A000000000005 /* prompts.json */; };
+		F001000A2C8A000000000006 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = F001000B2C8A000000000006 /* categories.json */; };
+		F001000E2C8A000000000008 /* mlc-package-config.json in Resources */ = {isa = PBXBuildFile; fileRef = F001000D2C8A000000000008 /* mlc-package-config.json */; };
 		C0D643C829F99B34004DDAA4 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D643C729F99B34004DDAA4 /* MessageView.swift */; };
 		C0DDBDF62A39103F00E9D060 /* ChatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D643C029F99B07004DDAA4 /* ChatState.swift */; };
+		C0DDBDF72A39103F00E9D061 /* PromptClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D643C129F99B07004DDAA5 /* PromptClassifier.swift */; };
 		F3C280002BEB16ED00F1E016 /* bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3C27FFF2BEB16ED00F1E016 /* bundle */; };
 /* End PBXBuildFile section */
 
@@ -66,8 +74,16 @@
 		C0D643B629F99A80004DDAA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0D643B929F99A80004DDAA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C0D643C029F99B07004DDAA4 /* ChatState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatState.swift; sourceTree = "<group>"; };
+		C0D643C129F99B07004DDAA5 /* PromptClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptClassifier.swift; sourceTree = "<group>"; };
 		C0D643C229F99B07004DDAA4 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		C0D643C729F99B34004DDAA4 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		F00100002C8A000000000001 /* PromptRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptRepository.swift; sourceTree = "<group>"; };
+		F00100022C8A000000000002 /* BenchmarkRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkRunner.swift; sourceTree = "<group>"; };
+		F00100042C8A000000000003 /* BenchmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkView.swift; sourceTree = "<group>"; };
+		F00100062C8A000000000004 /* model-mapping.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "model-mapping.json"; sourceTree = "<group>"; };
+		F00100092C8A000000000005 /* prompts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "prompts.json"; sourceTree = "<group>"; };
+		F001000B2C8A000000000006 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "categories.json"; sourceTree = "<group>"; };
+		F001000D2C8A000000000008 /* mlc-package-config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "mlc-package-config.json"; sourceTree = "<group>"; };
 		C0DDBE0B2A3BA6F800E9D060 /* MLCSwift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MLCSwift; sourceTree = "<group>"; };
 		F3C27FFF2BEB16ED00F1E016 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bundle; path = dist/bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,11 +126,22 @@
 			children = (
 				A773CC642A5DC98200467BFE /* ImageProcessing.swift */,
 				1453A4CB2A1354B9001B909F /* ModelView.swift */,
+				F00100042C8A000000000003 /* BenchmarkView.swift */,
 				1453A4CA2A1354B9001B909F /* StartView.swift */,
 				C0D643C729F99B34004DDAA4 /* MessageView.swift */,
 				C0D643C229F99B07004DDAA4 /* ChatView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AEC27F042A86338800254E68 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C0D643C129F99B07004DDAA5 /* PromptClassifier.swift */,
+				F00100002C8A000000000001 /* PromptRepository.swift */,
+				F00100022C8A000000000002 /* BenchmarkRunner.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		AEC27F032A86338800254E67 /* Common */ = {
@@ -151,12 +178,25 @@
 				AEC27EF82A85C29000254E67 /* Models */,
 				AEC27EFF2A85EE2800254E67 /* States */,
 				AEC27F002A86306800254E67 /* Views */,
+				AEC27F042A86338800254E68 /* Utils */,
+				F001000C2C8A000000000007 /* Resources */,
 				C06A74E629F9A1DF00BC4BE6 /* MLCChat.entitlements */,
 				C0D643B229F99A7F004DDAA4 /* MLCChatApp.swift */,
 				C0D643B629F99A80004DDAA4 /* Assets.xcassets */,
 				C0D643B829F99A80004DDAA4 /* Preview Content */,
 			);
 			path = MLCChat;
+			sourceTree = "<group>";
+		};
+		F001000C2C8A000000000007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F00100062C8A000000000004 /* model-mapping.json */,
+				F00100092C8A000000000005 /* prompts.json */,
+				F001000B2C8A000000000006 /* categories.json */,
+				F001000D2C8A000000000008 /* mlc-package-config.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		C0D643B829F99A80004DDAA4 /* Preview Content */ = {
@@ -253,6 +293,10 @@
 			files = (
 				C0D643BA29F99A80004DDAA4 /* Preview Assets.xcassets in Resources */,
 				C0D643B729F99A80004DDAA4 /* Assets.xcassets in Resources */,
+				F00100072C8A000000000004 /* model-mapping.json in Resources */,
+				F00100082C8A000000000005 /* prompts.json in Resources */,
+				F001000A2C8A000000000006 /* categories.json in Resources */,
+				F001000E2C8A000000000008 /* mlc-package-config.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +318,12 @@
 				AEC27EFA2A85C2AC00254E67 /* ParamsConfig.swift in Sources */,
 				AEC27EFC2A85C3B000254E67 /* AppConfig.swift in Sources */,
 				AEC27F022A86337E00254E67 /* Constants.swift in Sources */,
+				C0DDBDF72A39103F00E9D061 /* PromptClassifier.swift in Sources */,
 				1453A4D02A1354B9001B909F /* ModelView.swift in Sources */,
 				1453A4CF2A1354B9001B909F /* StartView.swift in Sources */,
+				F00100012C8A000000000001 /* PromptRepository.swift in Sources */,
+				F00100032C8A000000000002 /* BenchmarkRunner.swift in Sources */,
+				F00100052C8A000000000003 /* BenchmarkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

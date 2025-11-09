@@ -2,8 +2,8 @@
     "device": "iphone",
     "model_list": [
         {
-            "model": "HF://mlc-ai/Qwen3-0.6B-q4f32_1-MLC",
-            "model_id": "Qwen3-0.6B-q4f32_1-MLC",
+            "model": "HF://mlc-ai/Qwen3-0.6B-q0f16-MLC",
+            "model_id": "Qwen3-0.6B-q0f16-MLC",
             "estimated_vram_bytes": 3000000000,
             "overrides": {
                 "prefill_chunk_size": 128,
@@ -12,8 +12,8 @@
             "bundle_weight": true
         },
         {
-            "model": "HF://mlc-ai/Qwen3-0.6B-q0f32-MLC",
-            "model_id": "Qwen3-0.6B-q0f32-MLC",
+            "model": "HF://mlc-ai/Qwen3-1.7B-q4f16_1-MLC",
+            "model_id": "Qwen3-1.7B-q4f16_1-MLC",
             "estimated_vram_bytes": 3000000000,
             "overrides": {
                 "prefill_chunk_size": 128,

@@ -1,0 +1,8 @@
+{
+  "Factual": "Qwen3-0.6B-q4f32_1-MLC",
+  "Reasoning": "Qwen3-0.6B-q0f32-MLC",
+  "Creative": "Qwen3-0.6B-q4f32_1-MLC",
+  "Instruction-heavy": "Qwen3-0.6B-q0f32-MLC",
+  "Role-based": "Qwen3-0.6B-q4f32_1-MLC"
+}
+

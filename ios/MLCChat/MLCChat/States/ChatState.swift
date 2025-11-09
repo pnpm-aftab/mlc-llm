@@ -129,6 +129,11 @@ final class ChatState: ObservableObject {
         appendMessage(role: .assistant, message: "")
 
         Task {
+            // Classify prompt before generation and show category in infoText
+            let category = await PromptClassifier.shared.classify(engine: self.engine, text: prompt)
+            DispatchQueue.main.async {
+                self.infoText = "Category: \(category)"
+            }
             self.historyMessages.append(
                 ChatCompletionMessage(role: .user, content: prompt)
             )

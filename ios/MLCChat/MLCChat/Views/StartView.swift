@@ -41,6 +41,14 @@ struct StartView: View {
             } message: {
                 Text(appState.alertMessage)
             }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink("Benchmark") {
+                        BenchmarkView()
+                            .environmentObject(appState)
+                    }
+                }
+            }
         }
     }
 }

@@ -1,0 +1,504 @@
+{
+    "prompts": [
+      {
+        "id": 1,
+        "category": "Factual",
+        "prompt": "Explain the process of photosynthesis in detail, including the roles of chlorophyll, light-dependent reactions, and the Calvin cycle. How do these processes contribute to the production of glucose and oxygen?"
+      },
+      {
+        "id": 2,
+        "category": "Factual",
+        "prompt": "Describe the major causes and key events of the French Revolution, starting from the financial crisis of the monarchy to the rise of Napoleon Bonaparte. What were its long-term impacts on Europe?"
+      },
+      {
+        "id": 3,
+        "category": "Factual",
+        "prompt": "What are the fundamental differences between a solid-state drive (SSD) and a hard disk drive (HDD)? Discuss their respective technologies, performance characteristics, durability, and typical use cases in modern computing."
+      },
+      {
+        "id": 4,
+        "category": "Factual",
+        "prompt": "Provide a comprehensive overview of the human circulatory system. Describe the functions of the heart, arteries, veins, and capillaries, and explain the difference between systemic and pulmonary circulation."
+      },
+      {
+        "id": 5,
+        "category": "Factual",
+        "prompt": "Who was Ada Lovelace and what is her significance in the history of computing? Detail her work on Charles Babbage's Analytical Engine and why she is often considered the first computer programmer."
+      },
+      {
+        "id": 6,
+        "category": "Factual",
+        "prompt": "Summarize the core principles of quantum mechanics, including concepts like superposition, entanglement, and wave-particle duality. How do these principles differ from classical physics?"
+      },
+      {
+        "id": 7,
+        "category": "Factual",
+        "prompt": "Outline the major geological eras of Earth's history, from the Precambrian to the Cenozoic. For each era, mention a dominant life form or a significant geological event."
+      },
+      {
+        "id": 8,
+        "category": "Factual",
+        "prompt": "What is the structure and function of DNA? Explain the process of DNA replication and how genetic information is transcribed and translated to produce proteins."
+      },
+      {
+        "id": 9,
+        "category": "Factual",
+        "prompt": "Describe the economic system of mercantilism as it was practiced in Europe from the 16th to the 18th century. What were its main goals and how did it influence colonial policy?"
+      },
+      {
+        "id": 10,
+        "category": "Factual",
+        "prompt": "Explain the concept of a black hole, including its formation, the event horizon, and the singularity. What is the Schwarzschild radius and how is it calculated?"
+      },
+      {
+        "id": 11,
+        "category": "Factual",
+        "prompt": "List and describe the five largest countries in the world by land area. For each, name its capital city and a major geographical feature."
+      },
+      {
+        "id": 12,
+        "category": "Factual",
+        "prompt": "What are the primary functions of the United Nations Security Council? Describe its permanent members and the concept of the veto power."
+      },
+      {
+        "id": 13,
+        "category": "Factual",
+        "prompt": "Detail the process of how a bill becomes a law in the United States, tracing its path from introduction in either the House or Senate to presidential approval or veto."
+      },
+      {
+        "id": 14,
+        "category": "Factual",
+        "prompt": "Who were the key figures of the Harlem Renaissance? Describe the movement's impact on American art, music, and literature during the 1920s and 1930s."
+      },
+      {
+        "id": 15,
+        "category": "Factual",
+        "prompt": "Explain the difference between weather and climate. Provide examples of each and describe the primary factors that influence long-term climate patterns in a region."
+      },
+      {
+        "id": 16,
+        "category": "Factual",
+        "prompt": "What is the Higgs boson and why is its discovery significant to the Standard Model of particle physics? Describe the role of the Higgs field."
+      },
+      {
+        "id": 17,
+        "category": "Factual",
+        "prompt": "Provide a brief history of the internet, from its origins as ARPANET to the development of the World Wide Web by Tim Berners-Lee."
+      },
+      {
+        "id": 18,
+        "category": "Factual",
+        "prompt": "Describe the art and architectural style of the Renaissance, focusing on its key characteristics and famous examples like the works of Michelangelo and Brunelleschi's dome."
+      },
+      {
+        "id": 19,
+        "category": "Factual",
+        "prompt": "What are the main components of a computer's central processing unit (CPU)? Explain the functions of the arithmetic logic unit (ALU) and the control unit (CU)."
+      },
+      {
+        "id": 20,
+        "category": "Factual",
+        "prompt": "Summarize the plot and main themes of George Orwell's novel '1984'. Discuss the concepts of Big Brother, doublethink, and thoughtcrime as presented in the book."
+      },
+      {
+        "id": 21,
+        "category": "Reasoning",
+        "prompt": "A farmer has 17 sheep. All but 9 die. How many are left? Explain the common logical trap in this question and provide the correct answer with a clear step-by-step explanation."
+      },
+      {
+        "id": 22,
+        "category": "Reasoning",
+        "prompt": "If a red house is made of red bricks, and a blue house is made of blue bricks, what is a green house made of? Explain the play on words and the logical reasoning needed to arrive at the correct answer."
+      },
+      {
+        "id": 23,
+        "category": "Reasoning",
+        "prompt": "You are in a race and you pass the person in second place. What place are you in now? Provide a detailed breakdown of the positions to justify your answer."
+      },
+      {
+        "id": 24,
+        "category": "Reasoning",
+        "prompt": "A man is looking at a portrait. Someone asks him whose portrait he is looking at. He replies, 'Brothers and sisters I have none, but that man's father is my father's son.' Who is in the portrait? Explain the deductive steps."
+      },
+      {
+        "id": 25,
+        "category": "Reasoning",
+        "prompt": "Three friends check into a hotel room that costs $30. They each contribute $10. Later, the clerk realizes the room is only $25 and gives the bellhop $5 to return. The bellhop, unable to split $5, gives each friend $1 and keeps $2. So each friend paid $9, totaling $27. The bellhop has $2, making $29. Where is the missing dollar? Analyze the flawed logic in this riddle."
+      },
+      {
+        "id": 26,
+        "category": "Reasoning",
+        "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Solve this using algebra and explain why the intuitive answer is often incorrect."
+      },
+      {
+        "id": 27,
+        "category": "Reasoning",
+        "prompt": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets? Explain the relationship between the number of machines and the time taken."
+      },
+      {
+        "id": 28,
+        "category": "Reasoning",
+        "prompt": "There are two doors. One leads to freedom, the other to doom. Two guards stand by the doors. One guard always tells the truth, the other always lies. You can only ask one question to one guard. What question do you ask to find the door to freedom? Detail the logic behind your chosen question."
+      },
+      {
+        "id": 29,
+        "category": "Reasoning",
+        "prompt": "A study finds a strong correlation between ice cream sales and drowning incidents. Does this mean eating ice cream causes drowning? Explain the concept of a confounding variable and provide a more likely explanation for the correlation."
+      },
+      {
+        "id": 30,
+        "category": "Reasoning",
+        "prompt": "You have a 3-gallon jug and a 5-gallon jug, and an unlimited supply of water. How can you measure out exactly 4 gallons of water? Provide a step-by-step sequence of actions."
+      },
+      {
+        "id": 31,
+        "category": "Reasoning",
+        "prompt": "Four people need to cross a bridge at night. They only have one flashlight, and the bridge can only hold two people at a time. Person A takes 1 minute, B takes 2 minutes, C takes 5 minutes, and D takes 10 minutes to cross. When two cross, they must go at the slower person's pace. What is the fastest time they can all get across?"
+      },
+      {
+        "id": 32,
+        "category": "Reasoning",
+        "prompt": "An apple costs 40 cents, a banana costs 60 cents, and a grapefruit costs 80 cents. How much does a pear cost? Analyze the pattern in the words and their associated costs to find the solution."
+      },
+      {
+        "id": 33,
+        "category": "Reasoning",
+        "prompt": "If you have a drawer with 10 white socks and 10 black socks, what is the minimum number of socks you must take out to guarantee you have a matching pair? Explain the worst-case scenario logic."
+      },
+      {
+        "id": 34,
+        "category": "Reasoning",
+        "prompt": "A snail is at the bottom of a 30-foot well. Each day it climbs up 3 feet, but each night it slides back down 2 feet. How many days will it take for the snail to reach the top of the well? Detail the daily progress."
+      },
+      {
+        "id": 35,
+        "category": "Reasoning",
+        "prompt": "Divide 30 by half and add ten. What is the result? Explain the critical distinction between dividing 'by half' and dividing 'in half'."
+      },
+      {
+        "id": 36,
+        "category": "Reasoning",
+        "prompt": "A man lives on the 12th floor of an apartment building. Every morning he takes the elevator down to go to work. When he comes back, he takes the elevator to the 7th floor and walks up the stairs to the 12th, unless it's raining. Why? Deduce the reason from the clues."
+      },
+      {
+        "id": 37,
+        "category": "Reasoning",
+        "prompt": "You are presented with two cards. One card is red on both sides, the other is red on one side and blue on the other. You pick a card and it is red on the side facing you. What is the probability that the other side is also red? Explain the conditional probability."
+      },
+      {
+        "id": 38,
+        "category": "Reasoning",
+        "prompt": "If you overtake the last person in a race, what position are you in? Analyze the semantics of the word 'last' to determine the logical conclusion."
+      },
+      {
+        "id": 39,
+        "category": "Reasoning",
+        "prompt": "Some months have 31 days, others have 30. How many have 28 days? This is a test of careful reading and logical interpretation of the question."
+      },
+      {
+        "id": 40,
+        "category": "Reasoning",
+        "prompt": "A clerk in a butcher shop is 5 feet 10 inches tall. What does he weigh? Use wordplay and context to find the correct, non-obvious answer."
+      },
+      {
+        "id": 41,
+        "category": "Role-based",
+        "prompt": "You are a seasoned travel agent specializing in sustainable tourism. A client wants a 10-day eco-friendly itinerary for Costa Rica. Create a detailed plan that includes visits to national parks, eco-lodges, and volunteer opportunities, emphasizing low environmental impact."
+      },
+      {
+        "id": 42,
+        "category": "Role-based",
+        "prompt": "You are a customer support representative for a tech company. A customer is frustrated because their new software is not working. Write a professional and empathetic email response that acknowledges their frustration, offers clear troubleshooting steps, and provides a timeline for a follow-up."
+      },
+      {
+        "id": 43,
+        "category": "Role-based",
+        "prompt": "You are a 1940s film noir detective. Write a monologue as you stand in the rain, looking at a crime scene. Describe your cynical thoughts about the city, the case, and the dame who walked into your office earlier that day."
+      },
+      {
+        "id": 44,
+        "category": "Role-based",
+        "prompt": "You are a nutritionist creating a one-week meal plan for a busy professional who wants to eat healthier but has little time to cook. Provide a detailed plan for breakfast, lunch, and dinner, including quick recipes and a weekend prep guide."
+      },
+      {
+        "id": 45,
+        "category": "Role-based",
+        "prompt": "You are a medieval king addressing your knights before a major battle. Write a powerful and inspiring speech that boosts their morale, reminds them of their duty and honor, and promises rewards for their bravery."
+      },
+      {
+        "id": 46,
+        "category": "Role-based",
+        "prompt": "You are a software engineer conducting a code review for a junior developer. The code works but is inefficient. Write constructive feedback that points out specific areas for improvement, explains the reasoning behind your suggestions, and offers resources for learning best practices."
+      },
+      {
+        "id": 47,
+        "category": "Role-based",
+        "prompt": "You are a futuristic tour guide on Mars in the year 2150. Describe the main attractions in the city of Olympus Mons to a group of tourists from Earth. Mention the unique architecture, the gravity-adjusted activities, and the view of the Martian landscape."
+      },
+      {
+        "id": 48,
+        "category": "Role-based",
+        "prompt": "You are a personal finance advisor. A client in their 30s has just received a significant inheritance and is unsure how to invest it. Draft a comprehensive email outlining a diversified investment strategy, including stocks, bonds, and retirement accounts, tailored to their age and risk tolerance."
+      },
+      {
+        "id": 49,
+        "category": "Role-based",
+        "prompt": "You are a master chef hosting a cooking show. Write the script for a segment where you teach the audience how to make a classic coq au vin. Include anecdotes about the dish's history, tips for selecting ingredients, and clear, step-by-step instructions."
+      },
+      {
+        "id": 50,
+        "category": "Role-based",
+        "prompt": "You are a skeptical scientist evaluating a proposal for a perpetual motion machine. Write a formal response to the inventor, politely explaining why the machine violates the fundamental laws of thermodynamics, specifically the first and second laws."
+      },
+      {
+        "id": 51,
+        "category": "Role-based",
+        "prompt": "You are a kindergarten teacher explaining the concept of sharing to a group of 5-year-olds. Create a simple story with animal characters that demonstrates why sharing is a good and kind thing to do, using language that is easy for them to understand."
+      },
+      {
+        "id": 52,
+        "category": "Role-based",
+        "prompt": "You are a marketing manager launching a new brand of eco-friendly coffee. Write a press release that announces the product launch, highlights its unique selling points (sustainable sourcing, compostable packaging), and includes a quote from the CEO."
+      },
+      {
+        "id": 53,
+        "category": "Role-based",
+        "prompt": "You are a ship's captain in the 18th century. Your ship is caught in a terrible storm. Write a log entry describing the conditions, the damage to the ship, the morale of the crew, and the difficult decisions you must make to survive."
+      },
+      {
+        "id": 54,
+        "category": "Role-based",
+        "prompt": "You are a career counselor helping a recent college graduate who is unsure what career path to pursue. Conduct a mock interview, asking probing questions about their interests, skills, and values to help them identify potential career options."
+      },
+      {
+        "id": 55,
+        "category": "Role-based",
+        "prompt": "You are a debate moderator for a local election. Frame the opening question for the candidates on the topic of urban development, ensuring it is neutral, balanced, and encourages a substantive discussion on their differing platforms."
+      },
+      {
+        "id": 56,
+        "category": "Role-based",
+        "prompt": "You are a playwright writing a dialogue between two estranged siblings who meet after many years at their childhood home, which is about to be sold. Explore their unresolved feelings, shared memories, and the tension between them."
+      },
+      {
+        "id": 57,
+        "category": "Role-based",
+        "prompt": "You are a public relations representative for a zoo after a rare animal has escaped. Write a statement for the press that reassures the public, explains the situation transparently, and details the steps being taken to safely recapture the animal."
+      },
+      {
+        "id": 58,
+        "category": "Role-based",
+        "prompt": "You are a historical reenactor playing the role of a Roman centurion. Give a short speech to a group of tourists about life in the Roman army, describing the training, discipline, and the armor and weapons you carry."
+      },
+      {
+        "id": 59,
+        "category": "Role-based",
+        "prompt": "You are a life coach helping a client overcome procrastination. Write a motivational message that includes practical strategies like the Pomodoro Technique, breaking down large tasks, and setting realistic goals to help them get started on a project they've been avoiding."
+      },
+      {
+        "id": 60,
+        "category": "Role-based",
+        "prompt": "You are an architect presenting a design for a new public library to a city council. Your speech should highlight the building's sustainable features, its community-focused spaces, and how it honors the city's history while looking towards the future."
+      },
+      {
+        "id": 61,
+        "category": "Instruction-heavy",
+        "prompt": "Generate a Python function named `calculate_compound_interest`. It should accept four arguments: principal (float), rate (float), times_compounded (int), and years (float). The function must return the final amount. Include a docstring explaining each parameter and the calculation formula."
+      },
+      {
+        "id": 62,
+        "category": "Instruction-heavy",
+        "prompt": "Create a detailed, numbered list of instructions on how to properly configure a new email account in the Microsoft Outlook desktop application. The steps should cover adding the account, setting up IMAP/POP3 settings, and configuring server ports for both incoming and outgoing mail."
+      },
+      {
+        "id": 63,
+        "category": "Instruction-heavy",
+        "prompt": "Write a recipe for a vegetarian lasagna. The instructions must be formatted as a numbered list. Before the list, provide a clear list of ingredients with precise quantities. After the list, include a 'Chef's Notes' section with tips for variation and storage."
+      },
+      {
+        "id": 64,
+        "category": "Instruction-heavy",
+        "prompt": "Create a JSON object representing a product listing for an online store. The object must have the following keys: `product_id` (integer), `name` (string), `price` (float), `in_stock` (boolean), `tags` (array of strings), and `dimensions` (a nested object with `height`, `width`, `depth` as integers). Fill it with plausible data."
+      },
+      {
+        "id": 65,
+        "category": "Instruction-heavy",
+        "prompt": "Provide a step-by-step guide on how to perform a basic search engine optimization (SEO) audit for a small business website. The guide should be divided into three sections: On-Page SEO, Off-Page SEO, and Technical SEO, with at least three actionable steps in each section."
+      },
+      {
+        "id": 66,
+        "category": "Instruction-heavy",
+        "prompt": "Summarize the plot of the movie 'Inception'. Your summary must be exactly three paragraphs long. The first paragraph should introduce the main character and his profession, the second should describe the central mission and its layers, and the third should explain the ambiguous ending. Do not use the word 'dream'."
+      },
+      {
+        "id": 67,
+        "category": "Instruction-heavy",
+        "prompt": "Write a shell script that backs up a specified directory to a compressed tar.gz file. The script must accept the source directory path and the destination backup file path as command-line arguments. It should also check if the source directory exists before proceeding and print a success or failure message."
+      },
+      {
+        "id": 68,
+        "category": "Instruction-heavy",
+        "prompt": "Create a markdown-formatted guide for setting up a two-factor authentication (2FA) using an authenticator app. The guide should use headings, bold text for emphasis, and a code block for example commands. It must cover finding the security settings, scanning a QR code, and saving backup codes."
+      },
+      {
+        "id": 69,
+        "category": "Instruction-heavy",
+        "prompt": "Draft a formal meeting agenda for a quarterly business review (QBR). The agenda must include the following items in this specific order: Welcome & Introductions, Review of Q3 Goals & KPIs, Departmental Presentations (Sales, Marketing, Engineering), Q4 Goals & Strategy, and Open Floor & Next Steps. Assign a time duration to each agenda item."
+      },
+      {
+        "id": 70,
+        "category": "Instruction-heavy",
+        "prompt": "Generate a CSS stylesheet for a simple blog post layout. The stylesheet must include styles for the `body`, a `container` class, an `h1` for the title, a `p` for the paragraph text, and a `blockquote`. The container should be centered with a max-width, and the blockquote should have a left border and different font color."
+      },
+      {
+        "id": 71,
+        "category": "Instruction-heavy",
+        "prompt": "Write a SQL query to find the top 5 customers who have spent the most money in an e-commerce database. The database has two tables: `customers` (with `customer_id` and `name`) and `orders` (with `order_id`, `customer_id`, and `amount`). The query should join the tables, group by customer, and order by the total amount spent in descending order."
+      },
+      {
+        "id": 72,
+        "category": "Instruction-heavy",
+        "prompt": "Create a set of instructions for assembling a basic bookshelf. The instructions should be written for someone with no experience, using simple language. Each step should reference a specific part (e.g., 'Side Panel A', 'Shelf B') and include a diagram description (e.g., 'Insert the four dowels into the holes on Side Panel A')."
+      },
+      {
+        "id": 73,
+        "category": "Instruction-heavy",
+        "prompt": "Format a block of text as a YAML configuration file for a CI/CD pipeline. The pipeline must have three stages: `build`, `test`, and `deploy`. The `build` stage should have one script command to build a Docker image. The `test` stage should run a test suite. The `deploy` stage should only run if the previous stages succeed and deploy to a staging environment."
+      },
+      {
+        "id": 74,
+        "category": "Instruction-heavy",
+        "prompt": "Provide a detailed, step-by-step tutorial on how to change a flat tire on a car. The instructions must include a list of necessary tools, safety precautions (like using the parking brake), and clear actions for each step, from loosening the lug nuts to lowering the car and tightening them in a star pattern."
+      },
+      {
+        "id": 75,
+        "category": "Instruction-heavy",
+        "prompt": "Write a regular expression that validates a strong password. The password must be between 8 and 16 characters long, contain at least one uppercase letter, one lowercase letter, one digit, and one special character from the set !@#$%^&*. Provide a brief explanation of what each part of the regex does."
+      },
+      {
+        "id": 76,
+        "category": "Instruction-heavy",
+        "prompt": "Create a user manual excerpt for a smart thermostat. The excerpt should explain how to create a new heating schedule. Use bullet points for the steps, and include screenshots descriptions (e.g., 'See Figure 1: The Scheduling Menu'). The instructions must cover setting the time, temperature, and selecting the days of the week."
+      },
+      {
+        "id": 77,
+        "category": "Instruction-heavy",
+        "prompt": "Generate a LaTeX code snippet for a simple mathematics document. The document must be an article class, include the amsmath package, and contain a numbered equation for the quadratic formula. Below the equation, add a short sentence explaining what the formula is used for."
+      },
+      {
+        "id": 78,
+        "category": "Instruction-heavy",
+        "prompt": "Write a set of rules for a new board game you invent. The rules must be clearly structured with sections for: Objective, Number of Players, Components, Setup, Gameplay (turn structure), and Winning Conditions. The game should be simple but complete."
+      },
+      {
+        "id": 79,
+        "category": "Instruction-heavy",
+        "prompt": "Provide a detailed guide on how to propagate a snake plant from a leaf cutting. The instructions must be in a numbered list format and cover selecting a healthy leaf, cutting it, letting it callous over, placing it in water or soil, and what to expect over the following weeks."
+      },
+      {
+        "id": 80,
+        "category": "Instruction-heavy",
+        "prompt": "Create a template for a professional project status report email. The template must have placeholders for `[Project Name]`, `[Date]`, `[Key Accomplishments]`, `[Upcoming Tasks]`, `[Blockers/Issues]`, and `[Next Steps]`. The tone should be formal and concise."
+      },
+      {
+        "id": 81,
+        "category": "Creative",
+        "prompt": "Write a short story (around 300 words) about a librarian who discovers a book that writes itself, predicting a minor event in the near future. The story should end with the librarian deciding what to do with this newfound knowledge."
+      },
+      {
+        "id": 82,
+        "category": "Creative",
+        "prompt": "Compose a poem about the silence of a forest after a heavy snowfall. Use sensory details to describe the muffled sounds, the visual of white on white, and the feeling of cold, crisp air. The poem should be at least 12 lines long."
+      },
+      {
+        "id": 83,
+        "category": "Creative",
+        "prompt": "Invent a new holiday called 'The Day of Lost Things'. Describe its traditions, the food that is eaten, and the story behind its origin. What do people do on this day to celebrate?"
+      },
+      {
+        "id": 84,
+        "category": "Creative",
+        "prompt": "Write a short dialogue between two ancient, sentient statues in a forgotten garden. They have watched the world change for centuries. What do they talk about? What are their hopes or fears?"
+      },
+      {
+        "id": 85,
+        "category": "Creative",
+        "prompt": "Describe a city built inside a giant, hollowed-out redwood tree. What are the unique architectural features? How do the inhabitants travel between levels? What is the culture like in this vertical city?"
+      },
+      {
+        "id": 86,
+        "category": "Creative",
+        "prompt": "You are a robot who has just developed a sense of humor for the first time. Write a stand-up comedy routine from this robot's perspective. The jokes should be about human behavior, logic, and the robot's own experience of the world."
+      },
+      {
+        "id": 87,
+        "category": "Creative",
+        "prompt": "Create a logbook entry from the captain of the first interstellar colony ship. The entry should describe the moment they finally receive a message back from the colony they established on a distant planet 20 years ago."
+      },
+      {
+        "id": 88,
+        "category": "Creative",
+        "prompt": "Write the opening chapter of a fantasy novel where the main character is a cartographer who discovers that maps can create the places they depict, not just represent them. The chapter should end with them accidentally drawing something into existence."
+      },
+      {
+        "id": 89,
+        "category": "Creative",
+        "prompt": "Imagine a world where emotions manifest as physical colors that emanate from a person. Write a scene from a courtroom where a lawyer is cross-examining a witness, and the judge and jury can see the colors of their lies, fear, and anger."
+      },
+      {
+        "id": 90,
+        "category": "Creative",
+        "prompt": "Compose a song lyric about a ghost who is haunting a coffee shop, not out of malice, but because they miss the taste of coffee and the sound of conversation. The tone should be melancholic but slightly whimsical."
+      },
+      {
+        "id": 91,
+        "category": "Creative",
+        "prompt": "Write a product description for a magical item sold in a fantasy market, such as a 'Pocket of Eternal Sunshine' or 'Quill that Writes Only Truths'. The description should be enticing, hint at its powers, and include a cryptic warning."
+      },
+      {
+        "id": 92,
+        "category": "Creative",
+        "prompt": "Create a myth explaining why the ocean has tides. The myth should feature gods, spirits, or mythical creatures and have a moral or a lesson embedded within the story."
+      },
+      {
+        "id": 93,
+        "category": "Creative",
+        "prompt": "Describe the experience of listening to music for a person who was born deaf and just received a new, experimental implant that allows them to hear for the first time. Focus on the overwhelming and confusing nature of the sensory input."
+      },
+      {
+        "id": 94,
+        "category": "Creative",
+        "prompt": "Write a script for a short, silent film about a small robot trying to water a plant on a desolate Mars colony. The story must be told entirely through actions and expressions, without any dialogue."
+      },
+      {
+        "id": 95,
+        "category": "Creative",
+        "prompt": "Invent a new sport that could be played on the moon, taking advantage of the low gravity. Describe the rules, the equipment needed, and what a championship match might look like."
+      },
+      {
+        "id": 96,
+        "category": "Creative",
+        "prompt": "Write a letter from a future historian to a present-day person, explaining what our current era is most remembered for 500 years from now. The historian's perspective should be surprising and insightful."
+      },
+      {
+        "id": 97,
+        "category": "Creative",
+        "prompt": "Create a menu for a restaurant that serves food from fictional universes. Include appetizers, main courses, and desserts from places like Hogwarts, Panem, or the Shire, with creative descriptions for each dish."
+      },
+      {
+        "id": 98,
+        "category": "Creative",
+        "prompt": "Write a short story from the perspective of a child's imaginary friend who is slowly fading away as the child grows up and makes real friends. Explore the feelings of nostalgia, purpose, and gentle acceptance."
+      },
+      {
+        "id": 99,
+        "category": "Creative",
+        "prompt": "Describe a color that doesn't exist. Give it a name and explain what it looks like, what emotions it evokes, and where in the natural or supernatural world one might find it."
+      },
+      {
+        "id": 100,
+        "category": "Creative",
+        "prompt": "Write a journal entry from a dragon who has decided to stop hoarding gold and has taken up a peaceful hobby, like gardening or painting. The entry should reflect on their past life and the joy they find in their new, simpler existence."
+      }
+    ]
+  }
