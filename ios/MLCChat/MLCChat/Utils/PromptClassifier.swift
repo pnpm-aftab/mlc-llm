@@ -50,7 +50,7 @@ final class PromptClassifier {
                 messages: messages,
                 max_tokens: 15,
                 stream_options: StreamOptions(include_usage: true),
-                temperature: 0.0  // Deterministic classification
+                temperature: 0.1,
             ) {
                 for choice in res.choices {
                     if let delta = choice.delta.content {
