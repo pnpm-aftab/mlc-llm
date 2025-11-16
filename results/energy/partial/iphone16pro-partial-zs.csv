@@ -1,0 +1,155 @@
+summary_totalPrompts,20
+summary_totalLatencyMs,89584
+summary_totalGenMs,62089
+summary_avgTtftMs,189
+summary_p50TtftMs,126
+summary_p95TtftMs,496
+summary_avgGenMs,3104
+summary_p50GenMs,1865
+summary_p95GenMs,9686
+summary_totalPromptTokens,532
+summary_totalCompletionTokens,2267
+summary_overallTPS,36.51
+summary_maxResidentMemoryBytes,1040171008
+summary_cpuTimeSeconds,0.00
+summary_energyMilliJoules,608184.72
+summary_classificationAccuracy,0.700
+summary_correctClassifications,14
+
+
+# Energy samples (real-time monitoring via CLPC)
+timestamp_seconds,thermalState,energy_mJ
+0.000,nominal,151653.88
+11.042,nominal,171455.96
+13.482,nominal,173932.03
+15.981,nominal,176942.82
+18.563,nominal,180111.21
+21.233,nominal,183548.93
+23.897,nominal,186640.24
+26.564,nominal,189791.78
+29.266,nominal,193137.21
+31.977,nominal,196377.04
+44.186,fair,426187.10
+47.027,fair,426187.10
+49.697,fair,426187.10
+52.498,fair,435296.58
+55.307,fair,441703.49
+58.602,serious,530495.68
+72.409,serious,582999.01
+76.509,serious,591254.88
+80.519,serious,607158.02
+93.743,serious,607158.02
+97.778,serious,608184.72
+97.831,serious,608184.72
+
+id,category,modelID,ttftMs,genMs,promptTokens,completionTokens,tps,expectedCategory,classificationAccuracy,completion
+1,Factual,Qwen3-0.6B-q4f32_1-MLC,135,1766,30,115,65.12,Factual,true,"<think>
+Okay, the user wants a detailed explanation of photosynthesis, including chlorophyll, light-dependent reactions, and the Calvin cycle. They also want to know how these processes contribute to producing glucose and oxygen. Let me start by breaking down each component.
+
+First, chlorophyll is essential. I remember that it's the pigment in plants that captures light. Then, the light-dependent reactions. These involve the conversion of light energy into chemical energy, probably in the presence of ATP and NADPH. Then the Calvin cycle, which is the process of converting carbon dioxide into glucose. 
+
+Wait, how do these processes contribute to glucose and oxygen? Oh right, the glucose comes from the Calvin cycle, and oxygen is released during the light-dependent"
+2,Factual,Qwen3-0.6B-q4f32_1-MLC,123,1735,32,118,68.01,Factual,true,"<think>
+Okay, the user wants a detailed explanation of the French Revolution's major causes and key events, starting from the financial crisis of the monarchy up to Napoleon's rise and long-term impacts on Europe. Let me break this down step by step.
+
+First, I need to outline the financial crisis of the monarchy. That's a key event. How did that lead to the Revolution? Maybe the monarchy's inability to manage its own finances, leading to debt and then the financial crisis. Then, the rise of the Revolution. What were the main reasons? The monarchy's failure, the need for change, and the Declaration of Independence. 
+
+Next, the key events: the Estates-General, the Declaration of Independence, the creation of the Constitution, and"
+3,Factual,Qwen3-0.6B-q4f32_1-MLC,125,1753,30,102,58.19,Factual,true,"<think>
+Okay, the user wants to know the differences between SSD and HDD, their technologies, performance, durability, and use cases. Let me start by breaking down each part.
+
+First, the fundamental differences. SSDs are solid-state, so they don't have physical parts like spinning disks. HDDs have a spinning disk. Then technologies: SSDs use NAND, while HDDs use spinning platters. Performance: SSDs are faster, HDDs are slower. Durability: SSDs are more durable, HDDs have more wear. Use cases: SSDs are for gaming and heavy data, HDDs for regular use.
+
+Wait, I should check if that's accurate. SSDs have no moving parts, so they're faster and more"
+4,Factual,Qwen3-0.6B-q4f32_1-MLC,124,1805,28,115,63.71,Factual,true,"<think>
+Okay, the user wants a comprehensive overview of the human circulatory system, including the heart, arteries, veins, capillaries, and the difference between systemic and pulmonary circulation. Let me start by breaking down each component.
+
+First, the heart. I know it's the main pump, right? So its main functions are to pump blood to the body. Then the arteries carry blood from the heart, and veins carry it back. Capillaries are tiny blood vessels, so they're crucial for oxygen and nutrients. Then systemic and pulmonary circulation: systemic is all the body, like the lungs, and pulmonary is the lungs. Wait, maybe I should clarify that systemic is all the body, including lungs, and pulmonary is the lungs."
+5,Role-based,Qwen3-0.6B-q4f32_1-MLC,127,1832,32,113,61.68,Factual,false,"<think>
+Okay, the user is asking about Ada Lovelace and her significance in the history of computing, especially focusing on her work on the Analytical Engine. Let me start by recalling what I know about her. 
+
+First, I remember that Charles Babbage was working on the Analytical Engine, which is the first computer. But I need to confirm if that's accurate. Oh, right, Babbage was a mathematician, not a computer programmer. So, Lovelace was the one who built the first general-purpose computer. 
+
+Wait, the user mentioned she's considered the first programmer. So, I should explain that she was the one who conceptualized the machine, not just the code. Her work on the Analytical Engine"
+6,Factual,Qwen3-0.6B-q4f32_1-MLC,126,1841,23,106,57.58,Factual,true,"<think>
+Okay, the user wants a summary of quantum mechanics core principles, including superposition, entanglement, and wave-particle duality, and how these differ from classical physics. Let me start by recalling what I know.
+
+First, superposition: in classical physics, particles have definite states (like spin 0 or 1), but quantum mechanics allows them to be in a superposition of states. So that's a key difference. Then entanglement: particles can affect each other even if they're far apart, which is a quantum phenomenon. Wave-particle duality: particles can behave like waves, which is another core concept.
+
+Now, how do these principles differ from classical? Classical physics is deterministic, with definite states and"
+7,Creative,Qwen3-0.6B-q4f32_1-MLC,126,1845,27,99,53.66,Factual,false,"<think>
+Okay, the user wants me to outline the major geological eras of Earth's history from Precambrian to Cenozoic, including dominant life forms and significant geological events for each era. Let me start by recalling the main geological periods.
+
+First, the Precambrian era. I remember that the Precambrian is the oldest, with the earliest life forms like the Archaean eukaryotes. Then the Paleozoic era, which includes the Carboniferous, Permian, and Triassic. I should mention these periods and their events. Next, the Mesozoic era, which includes Cenozoic and Tertiary. The Cenozoic is the last one, with dinosaurs and the rise of mammals"
+8,Factual,Qwen3-0.6B-q4f32_1-MLC,123,1867,25,108,57.85,Factual,true,"<think>
+Okay, the user is asking about the structure and function of DNA, replication, and how genetic information is transcribed and translated into proteins. Let me break this down step by step.
+
+First, the structure of DNA. I remember that DNA is a double-stranded helix. There's the sugar-phosphate backbone, and the nitrogenous bases. The structure is important because it's the blueprint for genetic information. Then, the function: it's the storage of genetic information, so it's both a molecule and a structure. 
+
+Next, replication. How does DNA replicate? It's semi-conservative replication, right? So strands are separated, and each strand is copied. Then, the process of DNA replication involves the enzyme helic"
+9,Factual,Qwen3-0.6B-q4f32_1-MLC,126,1862,31,117,62.84,Factual,true,"<think>
+Okay, the user wants me to describe the economic system of mercantilism in Europe from 16th to 18th century, including main goals and its influence on colonial policy. Let me start by recalling what I know about mercantilism.
+
+First, I remember that mercantilism was a system focused on accumulating wealth through trade, especially in the context of the European economy. It's about the balance of trade and how nations can be strengthened by their trade. So, the main goals would be to have a strong trade economy, maybe through colonies, and to have a strong market for their goods. Also, the idea was to have a strong state that can be supported by trade, which might involve colonies"
+10,Reasoning,Qwen3-0.6B-q0f32-MLC,490,8484,26,115,13.55,Factual,false,"<think>
+Okay, the user wants an explanation of black holes, their formation, event horizon, singularity, Schwarzschild radius, and how it's calculated. Let me start by breaking down each part.
+
+First, black holes are regions of spacetime where gravity is so strong that nothing can escape, not even light. Formation: they form from massive stars collapsing under their own gravity. I should mention the core collapse process.
+
+Event horizon is the boundary where nothing can escape. The Schwarzschild radius is the distance from the center where this boundary starts. The formula is R = 2GM/c², where G is the gravitational constant, M is the mass, and c is the speed of light. Need to explain that this radius is"
+11,Factual,Qwen3-0.6B-q4f32_1-MLC,123,1825,24,123,67.40,Factual,true,"<think>
+Okay, the user wants me to list and describe the five largest countries by land area, including their capitals and major geographical features. Let me start by recalling the five largest countries in terms of land area.
+
+First, the United States. It's the largest in terms of land area. Its capital is Washington, D.C., and the major geographical feature is the Atlantic Ocean. Then, the country with the largest area is Canada, so its capital is Ottawa, and the feature is the Arctic Ocean. Next, the country with the largest area is India, so its capital is New Delhi, and the feature is the Himalayas. Finally, the country with the largest area is Russia, with its capital in Moscow, and the feature is the"
+12,Factual,Qwen3-0.6B-q4f32_1-MLC,122,1854,22,125,67.42,Factual,true,"<think>
+Okay, the user is asking about the primary functions of the UN Security Council, including the permanent members and the concept of the veto power. Let me start by recalling what I know about the UN Security Council.
+
+First, the main functions of the Security Council are to maintain international peace and security, prevent armed conflicts, and ensure that the UN's peacekeeping missions are effective. Then, the permanent members are the five permanent members of the Security Council, which are the United Nations, France, Russia, China, and India. Their roles are important in the UN Security Council, and they have the veto power, which allows them to block decisions that might be considered a threat to international peace and security.
+
+Wait, I need to make sure I"
+13,Factual,Qwen3-0.6B-q4f32_1-MLC,126,1898,30,121,63.75,Factual,true,"<think>
+Okay, the user wants a detailed explanation of how a bill becomes a law in the U.S. from introduction to final approval or veto. Let me start by recalling the key steps involved in this process.
+
+First, I need to outline the stages: introduction, committee, voting, and then the final process. Introduction in the House or Senate. Then, the bill passes through the House and Senate, then goes to the House Committee, where it's reviewed. Then it goes to the House Floor for debate and voting. Then it moves to the House or Senate, maybe the House Committee, then to the House or Senate, then to the House or Senate, and finally to the President's desk for approval.
+
+Wait, maybe I should structure"
+14,Factual,Qwen3-0.6B-q4f32_1-MLC,129,1874,24,96,51.23,Factual,true,"<think>
+Okay, the user is asking about the key figures of the Harlem Renaissance and how it impacted American art, music, and literature in the 1920s and 1930s. Let me start by recalling what I know. The Harlem Renaissance was a cultural movement centered in Harlem, New York, during the 1920s and 1930s. The key figures here would be artists, writers, and intellectuals.
+
+First, I need to list the main names. Langston Deflora, Langston Southey, and Langston Hughes come to mind. Then there's Nesse, who was a poet and writer. Also, I should mention others like Langston Braxley,"
+15,Factual,Qwen3-0.6B-q4f32_1-MLC,123,2323,24,120,51.66,Factual,true,"<think>
+Okay, the user wants me to explain the difference between weather and climate, give examples, and describe the primary factors influencing long-term climate patterns in a region. Let me start by breaking down each concept.
+
+First, weather and climate are both related to the Earth's environment, but they have different focuses. Weather is about short-term conditions like temperature and precipitation, while climate is about long-term patterns. So, examples: weather could be a sunny day in a city, and climate might be the average temperature over a year.
+
+For the primary factors in long-term climate, I remember that things like solar radiation, ocean currents, and atmospheric circulation are key. But I need to make sure I'm not mixing up factors. Also, factors like"
+16,Reasoning,Qwen3-0.6B-q0f32-MLC,601,10671,25,119,11.15,Factual,false,"<think>
+Okay, the user is asking about the Higgs boson and its significance in the Standard Model. Let me start by recalling what I know. The Higgs boson is a particle that gives mass to other particles, right? So it's part of the Standard Model. The Standard Model is the framework that describes the fundamental particles and forces in the universe.
+
+The user wants to know why the discovery is significant. I should mention that the Higgs boson's existence confirms the Standard Model's predictions. Without it, the model wouldn't explain how particles gain mass. Also, the Higgs field is the medium through which particles interact with it, so its role is crucial.
+
+Wait, I should make sure to explain the Higgs field"
+17,Role-based,Qwen3-0.6B-q4f32_1-MLC,161,2380,23,114,47.90,Factual,false,"<think>
+Okay, the user wants a brief history of the internet, starting from ARPANET to the World Wide Web. Let me break this down.
+
+First, I need to recall the key points about ARPANET. That's the first part. The origin of the internet, maybe mention the Bell Labs and the early experiments. Then Tim Berners-Lee's role in the World Wide Web. He's the one who created the first web browser, right? So the World Wide Web is his contribution.
+
+Wait, but the user might be looking for a chronological history. So I should structure it from ARPANET's inception to the development of WWW. Also, include some key events or milestones. Maybe mention the first web browser, like"
+18,Factual,Qwen3-0.6B-q4f32_1-MLC,171,2290,25,110,48.03,Factual,true,"<think>
+Okay, the user wants me to describe the art and architecture of the Renaissance, focusing on key characteristics and examples like Michelangelo and Brunelleschi's dome. Let me start by breaking down what I know.
+
+First, the Renaissance is a period of great cultural and artistic achievement, starting in the 14th century. It's often linked with the 14th to 17th century. The key characteristics include humanism, which emphasizes the individual and the study of the human form. So, art and architecture should reflect that.
+
+For art, Renaissance artists like Leonardo da Vinci and Michelangelo are famous. Their works like the Sistine Chapel and the David in the Galleria Venera. I should mention how"
+19,Reasoning,Qwen3-0.6B-q0f32-MLC,393,9634,26,117,12.14,Factual,false,"<think>
+Okay, the user is asking about the main components of a computer's CPU, the functions of the ALU and CU. Let me start by recalling what I know. The CPU is the brain of the computer, so the main components would be the ALU, the CU, and maybe the registers. Wait, the user mentioned the ALU and CU, so I need to make sure I include those.
+
+The ALU is responsible for performing arithmetic and logical operations. That's right, like adding, subtracting, multiplying, dividing, and checking conditions. The CU handles the control of the CPU, managing the execution of instructions. It also includes the program counter, which keeps track of where the next instruction is to be executed.
+
+Wait"
+20,Factual,Qwen3-0.6B-q4f32_1-MLC,201,2550,25,114,44.71,Factual,true,"<think>
+Okay, I need to summarize the plot and main themes of George Orwell's '1984' and discuss Big Brother, doublethink, and thoughtcrime. Let me start by recalling what I know about the novel.
+
+First, the plot: The main story is about a totalitarian regime, the Party, and their control. The protagonist, Winston Smith, is a loyal servant. The story follows his experiences in the totalitarian state, where the government uses surveillance and propaganda. The main themes include totalitarianism, surveillance, and the concept of individual freedom. 
+
+Now, the main themes: Big Brother is the idea that the Party is a global system, and everyone is part of it. Doublethink is the idea that the system allows for"

@@ -276,7 +276,7 @@ final class BenchmarkRunner: ObservableObject {
             if limitPrompts {
                 appendLog("Loaded \(prompts.count) prompts (limited from \(allPrompts.count)), mapping has \(mapping.count) entries, \(installed.count) models installed")
             } else {
-                appendLog("Loaded \(prompts.count) prompts, mapping has \(mapping.count) entries, \(installed.count) models installed")
+            appendLog("Loaded \(prompts.count) prompts, mapping has \(mapping.count) entries, \(installed.count) models installed")
             }
 
             // Build a lookup from modelID to (path, lib) via AppState models
@@ -335,11 +335,14 @@ final class BenchmarkRunner: ObservableObject {
                 return
             }
 
+            // Phase 1: Pre-classify all prompts with router (before inference)
+            // This avoids keeping router + target model in memory simultaneously
+            appendLog("Phase 1: Pre-classifying all prompts...")
             appendLog("Loading router model \(routerModelID)...")
             let routerEngine = MLCEngine()
             do {
-                await routerEngine.reload(modelPath: routerInfo.path, modelLib: routerInfo.lib)
-                appendLog("Router model loaded successfully")
+            await routerEngine.reload(modelPath: routerInfo.path, modelLib: routerInfo.lib)
+            appendLog("Router model loaded successfully")
             } catch {
                 appendLog("ERROR loading router model: \(error)")
                 await routerEngine.unload()
@@ -350,6 +353,27 @@ final class BenchmarkRunner: ObservableObject {
                 return
             }
 
+            // Classify all prompts upfront
+            var promptClassifications: [Int: String] = [:]
+            for (idx, item) in prompts.enumerated() {
+                guard running else {
+                    appendLog("Classification stopped by user")
+                    break
+                }
+                let category = await PromptClassifier.shared.classify(engine: routerEngine, text: item.prompt)
+                promptClassifications[item.id] = category
+                appendLog("[\(idx + 1)/\(prompts.count)] Classified prompt #\(item.id) → \(category)")
+                progress = Double(idx + 1) / Double(prompts.count * 2)  // Half of total progress
+            }
+
+            // Unload router immediately after classification to free memory
+            appendLog("Phase 1 complete. Unloading router model to free memory...")
+            await routerEngine.unload()
+            
+            // Brief delay to allow memory reclamation
+            try? await Task.sleep(nanoseconds: 100_000_000)  // 0.1s
+            appendLog("Router unloaded. Starting inference phase...")
+
             let signposter = OSSignposter()
             let runHandle = signposter.beginInterval("BenchmarkRun")
             let runStartWall = CFAbsoluteTimeGetCurrent()
@@ -357,6 +381,7 @@ final class BenchmarkRunner: ObservableObject {
             var maxRSS: UInt64 = residentMemoryBytes()
             var totalGenMs = 0
 
+            // Phase 2: Run inference with target models (router not in memory)
             for (idx, item) in prompts.enumerated() {
                 // Check if we should stop
                 guard running else {
@@ -364,7 +389,12 @@ final class BenchmarkRunner: ObservableObject {
                     break
                 }
                 let promptHandle = signposter.beginInterval("Prompt", "\(item.id)")
-                let category = await PromptClassifier.shared.classify(engine: routerEngine, text: item.prompt)
+                guard let category = promptClassifications[item.id] else {
+                    appendLog("Skip prompt #\(item.id): no classification found")
+                    progress = Double(prompts.count + idx + 1) / Double(prompts.count * 2)
+                    signposter.endInterval("Prompt", promptHandle)
+                    continue
+                }
                 
                 // Get valid mapping based on available models
                 let validMapping = modelLookup.isEmpty ? 
@@ -373,7 +403,7 @@ final class BenchmarkRunner: ObservableObject {
                 
                 guard let targetModelID = validMapping[category] else {
                     appendLog("Skip prompt #\(item.id): no target model for category \(category)")
-                    progress = Double(idx + 1) / Double(prompts.count)
+                    progress = Double(prompts.count + idx + 1) / Double(prompts.count * 2)
                     signposter.endInterval("Prompt", promptHandle)
                     continue
                 }
@@ -381,19 +411,22 @@ final class BenchmarkRunner: ObservableObject {
                 // If modelLookup is empty, we need to skip model loading for now
                 if modelLookup.isEmpty {
                     appendLog("Skip prompt #\(item.id): model loading not available (modelLookup empty)")
-                    progress = Double(idx + 1) / Double(prompts.count)
+                    progress = Double(prompts.count + idx + 1) / Double(prompts.count * 2)
                     signposter.endInterval("Prompt", promptHandle)
                     continue
                 }
                 
                 guard let targetInfo = modelLookup[targetModelID] else {
                     appendLog("Skip prompt #\(item.id): target model not found in lookup: \(targetModelID)")
-                    progress = Double(idx + 1) / Double(prompts.count)
+                    progress = Double(prompts.count + idx + 1) / Double(prompts.count * 2)
                     signposter.endInterval("Prompt", promptHandle)
                     continue
                 }
 
                 appendLog("Processing prompt #\(item.id) [\(category)] → \(targetModelID)")
+                
+                // Scoped engine to ensure it's deallocated after use
+                do {
                 let engine = MLCEngine()
                 let tStart = CFAbsoluteTimeGetCurrent()
                 
@@ -401,9 +434,9 @@ final class BenchmarkRunner: ObservableObject {
                     await engine.reload(modelPath: targetInfo.path, modelLib: targetInfo.lib)
                 } catch {
                     appendLog("ERROR loading model \(targetModelID): \(error)")
-                    await engine.unload()
+                        await engine.unload()
                     signposter.endInterval("Prompt", promptHandle)
-                    progress = Double(idx + 1) / Double(prompts.count)
+                        progress = Double(prompts.count + idx + 1) / Double(prompts.count * 2)
                     continue
                 }
 
@@ -430,15 +463,15 @@ final class BenchmarkRunner: ObservableObject {
                     }
                 } catch {
                     appendLog("ERROR generating completion for prompt #\(item.id): \(error)")
-                    // Unload model on error
-                    await engine.unload()
+                        // Unload model on error
+                        await engine.unload()
                     signposter.endInterval("Prompt", promptHandle)
-                    progress = Double(idx + 1) / Double(prompts.count)
+                        progress = Double(prompts.count + idx + 1) / Double(prompts.count * 2)
                     continue
                 }
-                
-                // Unload model after each prompt to free memory
-                await engine.unload()
+                    
+                    // Unload model after each prompt to free memory
+                    await engine.unload()
 
                 let t1 = CFAbsoluteTimeGetCurrent()
                 let ttft = Int(((firstTokenTime ?? t1) - t0) * 1000)
@@ -453,15 +486,19 @@ final class BenchmarkRunner: ObservableObject {
                 let isCorrect = category == item.category
 
                 results.append(BenchmarkResult(id: item.id, category: category, modelID: targetModelID, ttftMs: ttft, genMs: gen, promptTokens: pt, completionTokens: ct, tps: tps, completion: completion, expectedCategory: item.category, classificationAccuracy: isCorrect))
-                progress = Double(idx + 1) / Double(prompts.count)
+                    progress = Double(prompts.count + idx + 1) / Double(prompts.count * 2)
                 totalGenMs += max(0, gen)
-                
-                // Record energy sample after each prompt
-                energyMonitor.recordSample()
+                    
+                    // Record energy sample after each prompt
+                    energyMonitor.recordSample()
 
                 let accuracyMark = isCorrect ? "✓" : "✗"
                 appendLog("\(accuracyMark) #\(item.id) [\(category)] → \(targetModelID) ttft=\(ttft)ms gen=\(gen)ms (expected: \(item.category))")
                 signposter.endInterval("Prompt", promptHandle)
+                } // End of scoped engine block - engine is deallocated here
+                
+                // Brief memory reclamation pause between prompts (especially for q0f32)
+                try? await Task.sleep(nanoseconds: 50_000_000)  // 0.05s
             }
 
             let cpuEnd = cpuTimeSeconds()
@@ -555,7 +592,7 @@ final class BenchmarkRunner: ObservableObject {
             if limitPrompts {
                 appendLog("Loaded \(prompts.count) prompts for direct benchmark (limited from \(allPrompts.count))")
             } else {
-                appendLog("Loaded \(prompts.count) prompts for direct benchmark")
+            appendLog("Loaded \(prompts.count) prompts for direct benchmark")
             }
 
             // Build a lookup from modelID to (path, lib) via AppState models
@@ -725,7 +762,7 @@ final class BenchmarkRunner: ObservableObject {
             if limitPrompts {
                 appendLog("Loaded \(prompts.count) prompts for quantization comparison (limited from \(allPrompts.count))")
             } else {
-                appendLog("Loaded \(prompts.count) prompts for quantization comparison")
+            appendLog("Loaded \(prompts.count) prompts for quantization comparison")
             }
             
             // Build a lookup from modelID to (path, lib) via AppState models

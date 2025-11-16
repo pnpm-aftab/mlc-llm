@@ -1,0 +1,725 @@
+summary_totalPrompts,100
+summary_totalLatencyMs,624020
+summary_totalGenMs,442383
+summary_avgTtftMs,301
+summary_p50TtftMs,260
+summary_p95TtftMs,615
+summary_avgGenMs,4424
+summary_p50GenMs,2543
+summary_p95GenMs,9921
+summary_totalPromptTokens,3816
+summary_totalCompletionTokens,11386
+summary_overallTPS,25.74
+summary_maxResidentMemoryBytes,1332166656
+summary_cpuTimeSeconds,106.11
+summary_energyMilliJoules,1365211.77
+summary_classificationAccuracy,0.640
+summary_correctClassifications,64
+
+
+# Energy samples (real-time monitoring via CLPC)
+timestamp_seconds,thermalState,energy_mJ
+0.000,nominal,2079.54
+41.706,nominal,68726.21
+44.442,nominal,71946.17
+47.142,nominal,75340.04
+50.032,nominal,78704.04
+52.950,nominal,82089.09
+55.882,nominal,85612.17
+58.825,fair,178185.96
+61.762,fair,185267.64
+64.886,fair,192455.26
+78.181,fair,192455.26
+81.901,fair,192455.26
+85.355,fair,200349.01
+88.752,fair,208965.75
+92.133,fair,217629.46
+95.515,fair,226903.53
+107.094,fair,258390.84
+110.746,fair,258390.84
+114.068,fair,266437.94
+127.824,fair,299261.15
+131.648,fair,301181.89
+135.271,fair,309956.96
+147.436,fair,326622.89
+150.983,fair,326622.89
+162.959,fair,349345.39
+174.400,fair,361368.74
+187.059,fair,378642.88
+190.745,fair,379880.54
+202.820,fair,402892.83
+206.355,fair,402892.83
+218.355,fair,426557.99
+222.196,fair,426803.30
+233.918,fair,448113.30
+245.765,fair,462932.77
+249.487,fair,462932.77
+252.821,fair,470960.44
+264.800,fair,493549.39
+268.419,fair,493549.39
+280.238,fair,515380.29
+291.757,fair,528814.58
+295.370,fair,529110.28
+298.837,fair,537028.41
+302.312,fair,545121.53
+305.770,fair,552967.79
+309.274,fair,561158.41
+312.666,fair,569524.50
+316.142,fair,577707.46
+319.657,fair,585753.42
+323.199,fair,594251.84
+326.730,fair,602345.19
+330.089,fair,610041.00
+333.575,fair,618053.50
+337.078,fair,626080.57
+340.576,fair,634075.09
+344.186,fair,647618.62
+347.545,fair,654090.82
+350.981,fair,662009.58
+354.462,fair,669973.17
+357.994,fair,678204.71
+361.519,fair,686439.88
+365.086,fair,694839.53
+379.226,serious,694839.53
+394.479,serious,731830.93
+398.689,serious,732303.21
+413.175,serious,776465.43
+426.633,serious,798553.99
+430.713,serious,798553.99
+434.567,serious,811662.49
+447.321,serious,845354.59
+460.129,serious,866817.75
+464.339,serious,867417.81
+468.167,serious,879616.74
+480.919,serious,914473.85
+485.202,serious,914577.62
+497.298,serious,947466.95
+501.552,serious,948122.43
+514.214,serious,981786.95
+526.682,serious,1004513.09
+530.965,serious,1004569.23
+543.695,serious,1038149.34
+556.656,serious,1061715.83
+560.944,serious,1062528.66
+564.759,serious,1075810.69
+568.597,serious,1090247.44
+572.374,serious,1103668.89
+576.198,serious,1117563.92
+580.147,serious,1130987.10
+593.150,serious,1164386.66
+597.468,serious,1165278.21
+601.350,serious,1179226.02
+605.316,serious,1194443.53
+609.320,serious,1207366.98
+622.113,serious,1241789.65
+626.450,serious,1242211.34
+630.206,serious,1255486.17
+634.143,serious,1270623.59
+638.050,serious,1284632.44
+650.682,serious,1336277.47
+655.129,serious,1336277.47
+658.767,serious,1349454.89
+662.848,serious,1365211.77
+662.910,serious,1365211.77
+
+id,category,modelID,ttftMs,genMs,promptTokens,completionTokens,tps,expectedCategory,classificationAccuracy,completion
+1,Factual,Qwen3-0.6B-q4f32_1-MLC,139,1823,30,109,59.79,Factual,true,"<think>
+Okay, the user wants a detailed explanation of photosynthesis, including chlorophyll, light-dependent reactions, and the Calvin cycle, and how these contribute to producing glucose and oxygen. Let me start by breaking down each component.
+
+First, chlorophyll is essential. I remember that chlorophyll is the pigment in plants that captures light. It's the main source of energy in photosynthesis. Then, the light-dependent reactions. These involve the conversion of light energy into chemical energy, probably in the presence of ATP and NADPH. Then the Calvin cycle, also known as the light-dependent reactions, which uses the energy to synthesize glucose. 
+
+Wait, the user mentioned glucose and oxygen. So, glucose is the product, and"
+2,Factual,Qwen3-0.6B-q4f32_1-MLC,130,1825,32,110,60.27,Factual,true,"<think>
+Okay, the user wants a detailed explanation of the major causes and key events of the French Revolution, starting from the financial crisis of the monarchy up to Napoleon's rise and long-term impacts on Europe. Let me break this down step by step.
+
+First, I need to outline the financial crisis of the monarchy. That's a key event. How did the monarchy face financial issues? Maybe taxes were too high, leading to debt. Then, the Declaration of the Rights of Man and the Constitution of 1791. That's a major event here. Then, the fall of the Bastille in 1799, which was a symbol of revolution. The Reign of Terror in 1793-179"
+3,Factual,Qwen3-0.6B-q4f32_1-MLC,126,1840,30,107,58.15,Factual,true,"<think>
+Okay, the user is asking about the differences between SSD and HDD, including their technologies, performance, durability, and use cases. Let me start by recalling what I know. SSDs are solid-state drives, right? They use NAND flash memory. HDDs use spinning disks with a magnetic tape. 
+
+First, the technologies: SSDs have no physical casing, so they're more compact. They use a different type of memory, which is a key point. HDDs have a spinning platter, so they're more bulky. Performance-wise, SSDs are faster because they don't have the same latency. But wait, latency is a factor here. SSDs have a latency of 0, so they're faster. HDDs"
+4,Factual,Qwen3-0.6B-q4f32_1-MLC,128,1830,28,116,63.39,Factual,true,"<think>
+Okay, the user wants a comprehensive overview of the human circulatory system, including the heart, arteries, veins, capillaries, and the difference between systemic and pulmonary circulation. Let me start by breaking down each component.
+
+First, the heart. I know it's the main pump, right? So its main functions are to pump blood to the body. Then the arteries carry blood from the heart, and veins carry it back. Capillaries are tiny blood vessels, so they're crucial for oxygen and nutrients. Then systemic and pulmonary circulation: systemic is all the body, like the lungs, and pulmonary is the lungs. Wait, maybe I should clarify that systemic is all the body, including the lungs, and pulmonary is the lungs"
+5,Role-based,Qwen3-0.6B-q4f32_1-MLC,130,1839,32,121,65.80,Factual,false,"<think>
+Okay, the user is asking about Ada Lovelace and her significance in the history of computing, especially focusing on her work on the Analytical Engine. Let me start by recalling what I know about her. 
+
+First, I remember that Charles Babbage was working on the Analytical Engine, which is the first computer. But I need to clarify that Lovelace was the first person who completed the analysis of the machine, not the actual machine. So, she was the one who designed the concept, not the implementation. 
+
+Wait, but in the history of computing, how does that fit? If she was the first to create the idea, then her significance is about that. She's often considered the first programmer because she was"
+6,Factual,Qwen3-0.6B-q4f32_1-MLC,124,1848,23,108,58.44,Factual,true,"<think>
+Okay, the user wants a summary of quantum mechanics core principles, including superposition, entanglement, and wave-particle duality, and how these differ from classical physics. Let me start by recalling what I know.
+
+First, superposition: in classical physics, things are either in a definite state or not, like a coin flipped. Quantum mechanics allows particles to be in a superposition of states, like a coin in two different states at the same time. That's a key difference. Then entanglement: particles can affect each other even if they're far apart, like a pair of entangled particles. That's a quantum phenomenon, not classical. Wave-particle duality: particles can behave like waves, like a"
+7,Creative,Qwen3-0.6B-q4f32_1-MLC,128,1854,27,107,57.71,Factual,false,"<think>
+Okay, the user wants me to outline the major geological eras of Earth's history from Precambrian to Cenozoic, including dominant life forms and significant geological events for each era. Let me start by recalling the main geological periods.
+
+First, the Precambrian era. I remember that it's the oldest, with the first life forms. The main event here is the formation of the Earth's crust, maybe the supercontinent story? Or the creation of the first oceans? Wait, the user specified both life forms and geological events. So for each era, I need to mention both.
+
+Next, the Paleozoic era. Dominant life forms: trilobites, maybe. Geological events: the rise of the"
+8,Factual,Qwen3-0.6B-q4f32_1-MLC,123,1841,25,99,53.78,Factual,true,"<think>
+Okay, the user is asking about the structure and function of DNA, replication, and how genetic information is transcribed and translated into proteins. Let me break this down step by step.
+
+First, the structure of DNA. I remember that DNA is a double-stranded helix. There's hydrogen bonds between the two strands, and there's a sugar-phosphate backbone. Then there's the nitrogenous bases: adenine, thymine, and cytosine, and uracil. Wait, uracil is a different base. Oh right, thymine and cytosine are the ones that form the base pairs. So the structure is like a double helix with sugar, phosphate, and nitrogen bases.
+
+Next,"
+9,Factual,Qwen3-0.6B-q4f32_1-MLC,126,2028,31,113,55.72,Factual,true,"<think>
+Okay, the user wants me to describe the economic system of mercantilism in Europe from the 16th to 18th century, including main goals and its influence on colonial policy. Let me start by recalling what I know about mercantilism.
+
+First, I remember that mercantilism was a system focused on accumulating wealth through trade, especially in the context of the European powers. It's about the balance of trade and how they could use their colonies to strengthen their economies. But I need to make sure I get the main goals right. 
+
+Wait, the user mentioned colonial policy. So, how did mercantilism influence colonial policies? I think it's about using the colonies as a source of"
+10,Reasoning,Qwen3-0.6B-q0f32-MLC,379,9264,26,113,12.20,Factual,false,"<think>
+Okay, the user wants an explanation of black holes, their formation, event horizon, singularity, Schwarzschild radius, and calculation. Let me start by breaking down each part.
+
+First, black holes are regions of spacetime where gravity is so strong that nothing can escape, not even light. Formation: they form from massive stars collapsing under their own gravity. I should mention the core collapse process.
+
+Event horizon is the boundary where nothing can escape. The Schwarzschild radius is the distance from the center where this boundary starts. I need to explain how it's calculated using the formula R = 2GM/c², where G is the gravitational constant, M is the mass, and c is the speed of light.
+
+Wait,"
+11,Factual,Qwen3-0.6B-q4f32_1-MLC,134,2680,24,124,46.27,Factual,true,"<think>
+Okay, the user wants me to list and describe the five largest countries by land area, including their capitals and major geographical features. Let me start by recalling the five largest countries in terms of land area.
+
+First, the United States. It's the largest in terms of land area. Its capital is Washington, D.C., and the major geographical feature is the Atlantic Ocean. Then, the country with the largest area is Canada, so its capital is Ottawa, and the feature is the Arctic Ocean. Next, the country with the largest area is Russia, so its capital is Moscow, and the feature is the Arctic Ocean. Finally, the country with the largest area is India, with its capital as New Delhi, and the feature is the"
+12,Factual,Qwen3-0.6B-q4f32_1-MLC,169,2152,22,125,58.09,Factual,true,"<think>
+Okay, the user is asking about the primary functions of the UN Security Council, including the permanent members and the concept of the veto power. Let me start by recalling what I know about the UN Security Council.
+
+First, the main functions of the UN Security Council are to maintain international peace and security, prevent armed conflicts, and ensure that the UN's peacekeeping missions are effective. Then, the permanent members are the five permanent members of the Security Council, which are the United Nations, France, Russia, China, and India. Their roles are important in the UN Security Council, and they have the veto power, which allows them to block decisions that might be considered a threat to international peace and security.
+
+Wait, I need to make sure"
+13,Factual,Qwen3-0.6B-q4f32_1-MLC,162,2388,30,123,51.51,Factual,true,"<think>
+Okay, the user wants to know the process of how a bill becomes a law in the U.S., starting from introduction in either the House or Senate to presidential approval or veto. Let me break this down step by step.
+
+First, I need to recall the main stages involved in the legislative process. The user mentioned both House and Senate, so I should cover both. The introduction of a bill is the first step. Then, the bill moves through the legislative branches, probably the House, and then to the Senate. 
+
+Wait, in the U.S., bills can be introduced in both houses, but the process is different. In the House, there's the House of Representatives and the Senate. Then, the bill is voted on by"
+14,Factual,Qwen3-0.6B-q4f32_1-MLC,173,2289,24,100,43.69,Factual,true,"<think>
+Okay, the user is asking about the key figures of the Harlem Renaissance and how it impacted American art, music, and literature in the 1920s and 1930s. Let me start by recalling what I know about the Harlem Renaissance. 
+
+First, the Harlem Renaissance was a cultural movement centered in the Harlem neighborhood, New York, during the 1920s and 1930s. The key figures here would be artists, writers, and intellectuals. I remember that Langston Deflora is a notable figure, but maybe I should check her name. Also, there's the Harlem Renaissance poets, like Langston Deflora, who was a poet. 
+
+Then, the"
+15,Factual,Qwen3-0.6B-q4f32_1-MLC,164,2352,24,120,51.02,Factual,true,"<think>
+Okay, the user wants me to explain the difference between weather and climate, give examples, and describe the primary factors influencing long-term climate patterns in a region. Let me start by breaking down each concept.
+
+First, weather is about short-term conditions like temperature and precipitation. Examples could be a sunny day in a tropical area or a snowstorm in a temperate area. Then climate is about long-term patterns, like average temperatures and precipitation over a long period. Examples like the same temperature year after year in a region.
+
+Next, the primary factors for long-term climate. That's probably things like the Earth's albedo, which affects how much solar radiation is absorbed, leading to temperature changes. Then maybe the position of the continents, like"
+16,Reasoning,Qwen3-0.6B-q0f32-MLC,361,8593,25,122,14.20,Factual,false,"<think>
+Okay, the user is asking about the Higgs boson and its significance in the Standard Model. Let me start by recalling what I know. The Higgs boson is a particle that gives mass to other particles. So, the first thing I need to explain is its role in the Standard Model. The Standard Model already includes the Higgs, but maybe the user wants to know more about its discovery and significance.
+
+The Higgs field is a quantum field that permeates the universe. It's like a vacuum energy that gives mass to particles. Without it, particles would be massless, which is why the Standard Model is important. The Higgs boson itself is the particle that carries this mass. Its discovery by the Large Had"
+17,Role-based,Qwen3-0.6B-q4f32_1-MLC,135,2620,23,113,43.13,Factual,false,"<think>
+Okay, the user wants a brief history of the internet, starting from ARPANET to the World Wide Web. Let me break this down.
+
+First, I need to recall the key points about ARPANET. That's the first part. The origin of the internet, maybe mention the Bell Labs and the development of protocols like ARPANET. Then Tim Berners-Lee's role in the World Wide Web. He's the one who created the first web browser, right? So the World Wide Web is his contribution.
+
+Wait, but the user wants the history from ARPANET to the Web. So I should structure it starting with ARPANET, then moving to the development of the World Wide Web. Maybe include some milestones"
+18,Factual,Qwen3-0.6B-q4f32_1-MLC,178,2222,25,112,50.41,Factual,true,"<think>
+Okay, the user wants me to describe the art and architecture of the Renaissance, focusing on key characteristics and examples like Michelangelo and Brunelleschi's dome. Let me start by breaking down what I know.
+
+First, the Renaissance was a period of great cultural and artistic flourishing, starting in the 14th century. I remember that it was a time of exploration and creativity. So, art and architecture here would be key. 
+
+For art, the Renaissance emphasized humanism, which was about studying nature, the soul, and the individual. That's a key point. Then, examples like Michelangelo's works, like the Sistine Chapel, and his use of perspective and dynamic compositions. Also, the frescoes in the Vatican"
+19,Reasoning,Qwen3-0.6B-q0f32-MLC,730,10537,26,119,11.29,Factual,false,"<think>
+Okay, the user is asking about the main components of a computer's CPU, the functions of the ALU and CU. Let me start by recalling what I know. The CPU is the brain of the computer, so the main components would be the CPU itself, which includes the ALU, CU, registers, and maybe the control unit. Wait, the user mentioned the main components, so I need to list them clearly.
+
+First, the CPU components. The CPU is made up of several parts. The arithmetic logic unit (ALU) is responsible for performing arithmetic and logical operations. The control unit manages the flow of data and instructions. Then there are registers, which are temporary storage for data and instructions. Oh, right, the"
+20,Factual,Qwen3-0.6B-q4f32_1-MLC,163,2101,25,112,53.31,Factual,true,"<think>
+Okay, I need to summarize the plot and main themes of George Orwell's '1984' and discuss Big Brother, doublethink, and thoughtcrime. Let me start by recalling what I know about the novel.
+
+First, the plot: The main story is about a totalitarian regime, the Party, and their control. The protagonist is a spy, maybe named Winston Smith. The story follows his experiences in the totalitarian state, showing the harshness and the oppressive nature of the regime. The main themes here are totalitarianism, surveillance, and individual freedom. 
+
+Now, the concepts mentioned: Big Brother. That's the idea that the Party is everywhere, and everyone is monitored. The concept of doublethink is about the idea that"
+21,Factual,Qwen3-0.6B-q4f32_1-MLC,164,2251,31,103,45.76,Reasoning,false,"<think>
+Okay, let's try to figure out this problem. So, the farmer has 17 sheep. All but 9 die. How many are left? Hmm, that sounds like a trick question. Let me think.
+
+First, the question is a bit of a riddle. The key here is probably the word ""all but."" If all but 9 die, does that mean 9 are still alive? Wait, maybe I'm misunderstanding. Let me parse it again: ""All but 9 die."" So, 17 sheep total. All except 9 die. So, 17 minus 9 equals 8? That seems straightforward. But why is this a trick question? Maybe there's a hidden trick"
+22,Reasoning,Qwen3-0.6B-q0f32-MLC,171,9163,41,125,13.64,Reasoning,true,"<think>
+Okay, let's see. The question is about a green house made of bricks. The user mentions that a red house is made of red bricks and a blue house is made of blue bricks. So, the play on words here is probably referring to the colors of the bricks. Red and blue are colors, and green is another color. But how does that connect to the house being made of bricks?
+
+First, I need to think about the possible meanings of ""green"" in the context of bricks. Maybe the house is made of green bricks, which are a type of brick. But wait, are there different types of bricks? For example, some bricks are green, like in some regions, or maybe they're used in a different"
+23,Role-based,Qwen3-0.6B-q4f32_1-MLC,154,2361,30,115,48.71,Reasoning,false,"<think>
+Okay, let's tackle this problem. The user is in a race and passes someone who is in second place. They want to know where they are now.
+
+First, I need to recall how race positions work. In a single race, like a 100m sprint, the positions are determined by the time taken. If someone passes another in second place, that means they were faster, right? So their time is better than the person's time. 
+
+But wait, how does the time affect the position? If you pass someone in second place, that means you have a better time. So, in that case, you're in first place. Because passing someone in second implies you're ahead. 
+
+But maybe there's"
+24,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,471,8691,41,114,13.12,Reasoning,false,"<think>
+Okay, let's try to figure out who is in the portrait. So, the man is looking at a portrait, and someone asks him whose portrait he is. The man says, ""Brothers and sisters I have none, but that man's father is my father's son."" Hmm, I need to break this down step by step.
+
+First, let's parse the statements. The man says he has no brothers and sisters. That makes sense because if he has no brothers and sisters, he's the only one. So, he's the only one. Then, the other part says that the man's father is the father of the man. Wait, that seems a bit confusing. Let me think again.
+
+The man's father"
+25,Reasoning,Qwen3-0.6B-q0f32-MLC,307,8655,68,99,11.44,Reasoning,true,"<think>
+Okay, let's try to figure out where the missing dollar is here. So, the problem says three friends check into a hotel room that costs $30. Each contributes $10. Then the clerk realizes the room is only $25, so the bellhop gets $5 back. The bellhop can't split $5, so he gives each friend $1 and keeps $2. Then each friend paid $9, totaling $27. The bellhop has $2, making $29. The question is where is the missing dollar.
+
+Hmm, so the total amount should be $30. Let me check the numbers again. The friends paid $10 each, so 3*10="
+26,Reasoning,Qwen3-0.6B-q0f32-MLC,362,9983,36,100,10.02,Reasoning,true,"<think>
+Okay, let's see. The problem says a bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. I need to find out how much the ball costs. Hmm, algebraically, how do I approach this?
+
+First, let me assign variables. Let me call the cost of the ball ""B"" and the cost of the bat ""T"". So, the total cost is B + T = 1.10. Also, the bat is $1.00 more than the ball, so T = B + 1.00. 
+
+Now, substituting the second equation into the first. So replacing T with B + 1."
+27,Factual,Qwen3-0.6B-q4f32_1-MLC,271,2149,34,113,52.58,Reasoning,false,"<think>
+Okay, let's try to figure out this problem. So, the question is: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets? Hmm, I need to understand the relationship between the number of machines and the time taken.
+
+First, let me recall some basic principles of work or efficiency. If I remember correctly, the time required is inversely proportional to the number of machines, assuming the amount of work is constant. But wait, in this case, the problem is about making widgets, so maybe the work is the same. Let me think.
+
+So, if 5 machines take 5 minutes to make 5 widgets"
+28,Reasoning,Qwen3-0.6B-q0f32-MLC,500,8848,55,120,13.56,Reasoning,true,"<think>
+Okay, let's see. There are two doors, one leads to freedom, the other to doom. Two guards are there, one tells the truth, the other lies. I need to ask one question to one guard to find the door to freedom. Hmm.
+
+First, I need to figure out what question would work. Since there are two guards, each has a different trait. The key here is that the question must be designed so that one guard's answer will lead me to the correct door. Let me think.
+
+If I ask a question that depends on the guard's honesty, maybe something like ""If I were to tell the truth, would you say the door leads to freedom?"" Wait, but that's a bit circular."
+29,Factual,Qwen3-0.6B-q4f32_1-MLC,158,2351,37,126,53.59,Reasoning,false,"<think>
+Okay, the user is asking about a study that finds a correlation between ice cream sales and drowning incidents. They want to know if eating ice cream causes drowning and explain the concept of a confounding variable and provide a more likely explanation for the correlation.
+
+First, I need to recall what confounding variables are. Confounding variables are factors that explain both the correlation between two variables, making it hard to determine causation. In this case, ice cream sales and drowning incidents might be due to some common cause, not the ice cream causing the drowning.
+
+So, the user is probably thinking that eating ice cream causes both ice cream sales and drowning. But the study shows a correlation, so there's a common cause. The confounding variable here"
+30,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,531,8809,31,109,12.37,Reasoning,false,"<think>
+Okay, so I need to figure out how to measure exactly 4 gallons using a 3-gallon jug and a 5-gallon jug. Let me think. Hmm, I remember that with these kinds of problems, you often have to use the concept of pouring water between the jugs to get the desired amount. Let me start by recalling similar problems.
+
+First, maybe I should consider the total capacity. The 3 and 5 gallons add up to 8 gallons. So, if I start with both jugs empty, and pour water from the 5-gallon jug into the 3-gallon jug until it's full. That would leave 2 gallons in the 5-gallon jug. Then, pour the"
+31,Factual,Qwen3-0.6B-q4f32_1-MLC,302,2558,66,114,44.57,Reasoning,false,"<think>
+Okay, let's try to figure out the fastest way for four people to cross the bridge at night. So, the problem says there's only one flashlight, and the bridge can hold two people at a time. We need to find the fastest time all four can get across.
+
+First, I remember that with these types of problems, there's usually a strategy involving the fastest people to start, then the slowest people to help. Let me think about how that works.
+
+So, the people are A, B, C, D. Their crossing times are 1, 2, 5, 10 minutes respectively. Since the bridge can only hold two people at a time, we need to pair them up optimally.
+
+"
+32,Reasoning,Qwen3-0.6B-q0f32-MLC,426,8585,36,93,10.83,Reasoning,true,"<think>
+Okay, let's see. The problem says an apple is 40 cents, a banana 60, and a grapefruit 80. Then asks how much a pear costs. Hmm, I need to figure out the pattern here.
+
+First, I'll list out the prices: 40, 60, 80. Let me check the differences between consecutive numbers. From 40 to 60, that's +20. Then from 60 to 80, another +20. So each subsequent item is 20 cents more expensive. That seems like an arithmetic sequence where each term increases by 20 cents.
+
+So if the pattern continues, the next item after"
+33,Reasoning,Qwen3-0.6B-q0f32-MLC,610,8605,36,118,13.71,Reasoning,true,"<think>
+Okay, so I need to figure out the minimum number of socks I have to take out from a drawer with 10 white and 10 black socks to guarantee a matching pair. Hmm, let's start by recalling some basic combinatorics. 
+
+First, the problem is about ensuring a pair, which means two socks of the same color. The worst-case scenario here would be when I take out as many socks as possible without getting a pair, and then the next sock would definitely make it a pair. 
+
+So, if there are 10 white socks and 10 black socks, the worst case is taking one white and one black sock first. That's 2 socks. Then, if I take another sock"
+34,Factual,Qwen3-0.6B-q4f32_1-MLC,236,2558,46,111,43.39,Reasoning,false,"<think>
+Okay, let's see. There's a snail at the bottom of a 30-foot well. Each day it climbs up 3 feet, but each night it slides back down 2 feet. I need to figure out how many days it will take for the snail to reach the top of the well. Hmm, how do I approach this?
+
+First, I remember that when dealing with problems like this, it's important to consider the snail's progress each day and then account for the sliding down. Let me think about this step by step.
+
+So, the snail starts at 0 feet. Each day, it climbs up 3 feet, so after one day, it's 3 feet up. Then"
+35,Factual,Qwen3-0.6B-q4f32_1-MLC,180,2138,23,104,48.64,Reasoning,false,"<think>
+Okay, let's tackle this problem step by step. The user is asking to divide 30 by half and then add ten, and then explain the difference between dividing 'by half' and dividing 'in half'. 
+
+First, I need to break down the problem. Let's start with the first part: dividing 30 by half. Hmm, dividing by half is the same as multiplying by twice the number, right? Because dividing by half is like multiplying by 2. For example, if you have 30 divided by half, that's 30 multiplied by 2. So 30 divided by 0.5 is 60. That's straightforward.
+
+Now, the next part is adding ten"
+36,Reasoning,Qwen3-0.6B-q0f32-MLC,485,8745,52,110,12.58,Reasoning,true,"<think>
+Okay, let's try to figure out this elevator problem. So, the man lives on the 12th floor. Every morning he takes the elevator down to work. When he comes back, he takes the elevator to the 7th floor and walks up the stairs to the 12th. Unless it's raining. Why?
+
+Hmm. The key here is probably something related to his daily routine. Let's break it down. He goes to work by elevator, then comes back. So, maybe he needs to get back to his apartment? Wait, but he lives on the 12th floor. If he comes back, he would be on the 12th floor. But then he takes the elevator to"
+37,Role-based,Qwen3-0.6B-q4f32_1-MLC,232,2439,53,124,50.84,Reasoning,false,"<think>
+Okay, let's try to figure out this probability problem. So, there are two cards. One is red on both sides, and the other is red on one side and blue on the other. I pick a card, and it's red on the side facing me. I need to find the probability that the other side is also red.
+
+First, I should recall what probability problems like these are about. Usually, these involve conditional probability, which is about the probability of an event occurring given that another event has already occurred. So, in this case, the question is about the probability that the other side is red, given that the selected card is red.
+
+Let me think about the structure of the cards. There are two cards."
+38,Reasoning,Qwen3-0.6B-q0f32-MLC,464,8617,26,117,13.58,Reasoning,true,"<think>
+Okay, let's tackle this question. The user is asking, if I overtake the last person in a race, what position am I in? They want me to analyze the semantics of the word 'last' to figure out the logical conclusion.
+
+First, I need to understand the context. In a race, the last person is the one who finishes last. So overtaking someone means moving ahead. But the question is about the position after overtaking. If someone overtakes the last person, they would be in a position that's before them. Wait, no, overtaking the last person would mean they are ahead of them. So if the last person is in position 10, overtaking them would mean they are in"
+39,Reasoning,Qwen3-0.6B-q0f32-MLC,454,8599,26,97,11.28,Reasoning,true,"<think>
+Okay, let's see. The question is asking how many months have 28 days. The answer is probably 4, right? Because in a non-leap year, February has 28 days. But wait, maybe I should check if there are other months with 28 days. Let me think. The months are January, February, March, April, May, June, July, August, September, October, November, December. So that's 12 months. But wait, some months have 28 days. For example, February always has 28 days in a non-leap year. So if the question is about the number of months with 28 days, then it's "
+40,Factual,Qwen3-0.6B-q4f32_1-MLC,152,2492,26,101,40.53,Reasoning,false,"<think>
+Okay, let's try to figure out this wordplay problem. The question says a clerk in a butcher shop is 5 feet 10 inches tall. We need to find out his weight using wordplay and context.
+
+First, I should convert the measurements to the same units. 5 feet 10 inches. Let me convert that to inches. There are 12 inches in a foot, so 5 feet is 60 inches. Adding 10 inches gives 70 inches. So, 70 inches in total. 
+
+Now, the problem is about weight. Maybe there's a play on words here. Let's think: 5 feet 10 inches. Wait, 5 feet is"
+41,Role-based,Qwen3-0.6B-q4f32_1-MLC,273,2158,38,116,53.75,Role-based,true,"<think>
+Okay, the user wants a 10-day eco-friendly itinerary for Costa Rica. Let me start by understanding the key points. They mentioned sustainable tourism, so I need to make sure the activities are environmentally friendly and support local communities.
+
+First, the client is a traveler, so the plan should be engaging and not just about the destination. I should structure the days with different activities. Let me break down the itinerary into sections: arrival and welcome, then spread out the days with various experiences.
+
+National parks are a big focus. I should include some popular ones like Corcovado, San Cristobal, and maybe even a beach. That's a good mix of nature and relaxation. Then eco-lodges: maybe a place like"
+42,Role-based,Qwen3-0.6B-q4f32_1-MLC,259,2328,43,110,47.25,Role-based,true,"<think>
+Okay, the user needs to write a professional and empathetic email response for a customer. Let me break down the requirements.
+
+First, acknowledge the customer's frustration. Start with ""Thank you for reaching out!"" to show respect.
+
+Next, offer a clear troubleshooting step. Maybe mention common issues like software not working, maybe suggest checking the software version. Then, provide a timeline for a follow-up. Let's say 24-48 hours, so they can check back.
+
+Include a call to action for the customer to contact support. Make sure it's friendly and open-ended. Check for any specific terms they might need, like a sample email template. Make sure the tone is warm and supportive, not just technical.
+
+Wait,"
+43,Role-based,Qwen3-0.6B-q4f32_1-MLC,260,2193,41,104,47.42,Role-based,true,"<think>
+Okay, the user wants me to write a monologue as a 1940s film noir detective in the rain, looking at a crime scene. Let me break this down.
+
+First, I need to recall the key elements: being a detective, 1940s, in the rain, crime scene, and a dame. The user wants me to describe thoughts on the city, the case, and the dame.
+
+I should start with the setting. The rain and the crime scene. Then, think about the city's atmosphere. Maybe mention the city's history, the past, and how it's connected to the case. Then, the dame: her presence, her role, and maybe her past.
+
+Cyn"
+44,Role-based,Qwen3-0.6B-q4f32_1-MLC,257,2271,41,116,51.08,Role-based,true,"<think>
+Okay, the user is a nutritionist creating a one-week meal plan for a busy professional. They want it to be easy to prepare, quick, and include breakfast, lunch, and dinner, plus a weekend prep guide. Let me break this down.
+
+First, I need to structure the plan into three main meals: breakfast, lunch, dinner. Then add a weekend prep guide. Let's start with breakfast. Quick and healthy options are key. Maybe include a quick recipe for a healthy start. Maybe a smoothie or a simple bowl. Then lunch: maybe quick and easy, like a quick salad or a protein shake. Dinner: maybe a quick meal, like a stir-fry or a quick dinner. Then the weekend prep guide"
+45,Role-based,Qwen3-0.6B-q4f32_1-MLC,173,2236,35,120,53.67,Role-based,true,"<think>
+Okay, the user wants me to write a speech for a medieval king addressing his knights before a major battle. The speech needs to be powerful, inspiring, boost their morale, remind them of their duty and honor, and promise rewards for bravery.
+
+First, I should start with a welcoming and respectful opening. The king is addressing the knights, so maybe something like ""O knights, brothers of the realm, let us begin this battle with courage and unity.""
+
+Next, the speech should acknowledge their role. Mentioning their duty and honor is important. Maybe something like, ""We stand here not just as soldiers, but as the guardians of our land, sworn to protect and serve.""
+
+Then, the promise of rewards. The king needs to express"
+46,Role-based,Qwen3-0.6B-q4f32_1-MLC,255,2233,42,114,51.05,Role-based,true,"<think>
+Okay, the user is a software engineer reviewing code for a junior developer. The code is working but inefficient. I need to provide constructive feedback.
+
+First, I should acknowledge the effort. Then, identify specific areas for improvement. Maybe the code is using inefficient algorithms, like O(n^2), which is common in beginners. Suggest using more efficient algorithms, like O(n log n). Explain that inefficiency is a problem, and how that affects performance. Offer resources like Leetcode or Coursera for algorithm courses.
+
+Wait, the user mentioned being a software engineer, so I should make it sound like I'm helping. Offer practical steps they can take, like implementing a quick sort instead of a bubble sort. Also, mention the"
+47,Role-based,Qwen3-0.6B-q4f32_1-MLC,261,2254,43,114,50.58,Role-based,true,"<think>
+Okay, the user wants me to act as a futuristic tour guide on Mars in 2150, describing the main attractions to a group of tourists from Earth. They mentioned unique architecture, gravity-adjusted activities, and the view of the Martian landscape.
+
+First, I need to structure the response in a friendly and engaging way. Start with a welcoming statement. Then mention the main attractions: the architecture, gravity adjustments, and the landscape views. Make sure each point is highlighted. Use terms like ""gravity-adjusted activities"" and ""unique architecture"" to explain them. Also, include the view of the landscape, maybe mention the Olympus Mons volcano or the Atoll. Check if I'm missing anything, like the science experiments or other"
+48,Role-based,Qwen3-0.6B-q4f32_1-MLC,260,2300,46,120,52.17,Role-based,true,"<think>
+Okay, the user needs to draft a comprehensive email for a 30s client who just received inheritance and is unsure about investing. The client needs a diversified strategy with stocks, bonds, and retirement accounts. Let me start by understanding the key points.
+
+First, the client is in their 30s, so they might be in their early 30s. They need to know how to allocate their inheritance effectively. The email should be structured to guide them through the investment strategy.
+
+I should start with a friendly greeting. Then outline the main components: stocks, bonds, and retirement accounts. Each section needs to be explained with benefits and how they fit their age and risk tolerance. Maybe include examples or common advice for different age"
+49,Role-based,Qwen3-0.6B-q4f32_1-MLC,263,2223,42,118,53.08,Role-based,true,"<think>
+Okay, the user wants me to write a script for a cooking show where I teach the audience how to make a classic coq au vin. They mentioned including anecdotes about the dish's history, tips for selecting ingredients, and clear step-by-step instructions. Let me break this down.
+
+First, I need to start with an engaging opening. Maybe a warm welcome and a brief history of coq au vin. I should mention its origin, like the French dish, and maybe a story about its creation. Then, the main segment: making the coq au vin. Steps: preparation, cooking, and presentation. Include tips on choosing ingredients, like selecting the right meat and vegetables. Also, tips on how to season it, maybe hints"
+50,Role-based,Qwen3-0.6B-q4f32_1-MLC,168,2221,37,125,56.28,Role-based,true,"<think>
+Okay, the user wants me to write a formal response from a skeptical scientist to an inventor's proposal about a perpetual motion machine, explaining why it violates the first and second laws of thermodynamics. Let me start by recalling what those laws are.
+
+The first law is the conservation of energy, stating that energy cannot be created or destroyed. The second law introduces the concept of entropy, which is the measure of disorder or randomness in a system. So, the machine must not violate these laws.
+
+I need to structure the response politely. Start with a greeting, then state the skepticism, explain the laws, and maybe suggest that the machine's operations might be a result of entropy, not a violation. Make sure it's formal and clear, not"
+51,Role-based,Qwen3-0.6B-q4f32_1-MLC,258,2218,43,117,52.75,Role-based,true,"<think>
+Okay, the user wants a story for kindergarten teachers explaining sharing. Let me start by understanding the key points: it's for 5-year-olds, so simple language, and using animal characters. 
+
+First, I need to create a story that shows sharing. Maybe use animals to make it relatable. Let's think of animals that can demonstrate sharing. Lions, rabbits, maybe a rabbit and a squirrel. 
+
+The story should show why sharing is good. Maybe include a lesson about sharing through examples. The main idea is that sharing helps others and builds community. 
+
+Structure: Start with a story, maybe a rabbit and a squirrel. Show their actions, then explain the importance. Use simple words. Maybe include a question to engage the"
+52,Role-based,Qwen3-0.6B-q4f32_1-MLC,258,2255,37,123,54.55,Role-based,true,"<think>
+Okay, the user wants me to write a press release for a marketing manager launching an eco-friendly coffee brand. They mentioned including unique selling points like sustainable sourcing and compostable packaging, plus a quote from the CEO.
+
+First, I need to structure the press release properly. Start with the headline, then the date and location. Next, the company name and contact info. Then the announcement: launching the product. Highlight the key points: sustainable sourcing and compostable packaging. Add a quote from the CEO to add personality.
+
+I should make sure the quote is relevant and ties into the product's features. Check for clarity and flow. Make sure all required elements are included without being redundant. Also, use a professional tone suitable for a press release"
+53,Role-based,Qwen3-0.6B-q4f32_1-MLC,259,2243,43,109,48.60,Role-based,true,"<think>
+Okay, the user wants me to write a log entry from a 18th-century ship captain's perspective after the ship is caught in a terrible storm. Let me break this down.
+
+First, the log entry needs to include conditions, damage, crew morale, and difficult decisions. I should start with the initial state of the ship, maybe the weather and how it's affecting the ship. Then describe the damage, like the hull, sails, rigging, and maybe some structural issues. Next, the crew's morale—how they're feeling, maybe their tension or fear. Then the difficult decisions, like making the ship survive, maybe choosing between resources or actions.
+
+I need to make it sound 18th-century, so"
+54,Role-based,Qwen3-0.6B-q4f32_1-MLC,133,2518,38,121,48.05,Role-based,true,"<think>
+Okay, the user wants me to act as a career counselor helping a recent college graduate. They need a mock interview to explore their interests, skills, and values. Let me structure this step by step.
+
+First, I should start by setting up the interview format. It's important to create a safe and open space for the graduate to share their thoughts. Maybe start with a welcoming statement, then outline the structure of the interview.
+
+Next, I need to ask probing questions. These should help the graduate identify their interests, skills, and values. Examples could include open-ended questions, like ""What interests do you have in the field of..."" or ""How do you see yourself in this career?""
+
+I should also include questions that encourage self-ref"
+55,Role-based,Qwen3-0.6B-q4f32_1-MLC,162,2076,36,122,58.77,Role-based,true,"<think>
+Okay, the user wants me to frame an opening question for the debate moderator on the topic of urban development for the candidates. The question needs to be neutral, balanced, and encourage substantive discussion.
+
+First, I should start by understanding the key elements: urban development, candidates, debate opening question. The user probably wants to ensure that the question is open-ended and invites both sides to engage.
+
+I remember that in debates, the opening question is usually a prompt to set the stage for the discussion. So, the question should create a starting point for the candidates to present their arguments.
+
+Possible angles for urban development: economic, environmental, social, etc. The question needs to invite both candidates to explore their positions.
+
+Maybe structure it as a question"
+56,Role-based,Qwen3-0.6B-q4f32_1-MLC,169,2287,37,121,52.91,Role-based,true,"<think>
+Okay, the user wants me to explore a dialogue between two estranged siblings after many years, meeting at their childhood home, which is about to be sold. They need to explore unresolved feelings, shared memories, and the tension between them.
+
+First, I need to set up the scene. The setting is their childhood home, which is about to be sold. That creates a sense of impending change and unresolved pasts. The dialogue should highlight their pasts, maybe some memories from their childhood, and the tension between them.
+
+I should consider how to structure the dialogue. Start with their meeting, maybe in the house, showing their current state. Use dialogue to delve into their feelings, maybe some unresolved issues from their pasts. Include some"
+57,Role-based,Qwen3-0.6B-q4f32_1-MLC,257,2197,40,119,54.16,Role-based,true,"<think>
+Okay, the user wants me to write a statement for a zoo press after a rare animal escaped. Let me break this down.
+
+First, the statement needs to reassure the public. So, I should start with a statement of gratitude and commitment to the community. Then, explain the situation transparently. I need to mention the animal's name and the date of the escape. Next, detail the steps taken to safely recapture the animal. That's important for showing responsibility and care.
+
+I should structure it in a formal tone, maybe starting with a statement of gratitude, then the situation, then the steps, and a closing statement. Let me check for clarity and ensure all parts are covered: transparency, explanation, steps, and reassurance"
+58,Role-based,Qwen3-0.6B-q4f32_1-MLC,259,2287,38,116,50.72,Role-based,true,"<think>
+Okay, the user wants me to act as a Roman centurion and give a short speech to tourists about life in the army, focusing on training, discipline, and armor and weapons. Let me break this down.
+
+First, I need to structure the speech. It should start with a greeting to the tourists, then transition into the main points. The user probably wants to highlight the importance of these elements in the military life.
+
+I should mention training, discipline, and the gear. Maybe include how these things shape a soldier's life. Also, make it engaging and relatable, using terms like ""pride"" and ""duty.""
+
+Check for any cultural references or historical accuracy. Make sure the speech is concise but informative. Avoid"
+59,Role-based,Qwen3-0.6B-q4f32_1-MLC,272,2300,41,122,53.04,Role-based,true,"<think>
+Okay, the user wants a motivational message for a life coach helping someone overcome procrastination. They mentioned including the Pomodoro Technique, breaking down tasks, and setting realistic goals. Let me start by understanding each of these elements.
+
+First, the Pomodoro Technique. I should explain how to use it, maybe with examples of how to apply it in daily tasks. Then, breaking down large tasks into smaller steps. Maybe use examples like project management. Setting realistic goals is important for motivation, so maybe include how to set achievable goals.
+
+I need to structure the message to be encouraging and practical. Start with a warm greeting, then introduce the strategies. Make sure each strategy is clearly explained with a benefit. Use positive language to keep the"
+60,Role-based,Qwen3-0.6B-q4f32_1-MLC,263,2282,39,119,52.15,Role-based,true,"<think>
+Okay, the user is an architect presenting a design for a new public library to a city council. They want the speech to highlight sustainability, community spaces, and honoring history while looking towards the future.
+
+First, I need to structure the speech to cover each of these points. Let me start with the sustainability features. I should mention materials like recycled wood, solar panels, and rainwater harvesting. Maybe include specific examples like the use of 100% recycled materials or renewable energy systems.
+
+Next, community spaces. I should talk about inclusive design, maybe open spaces, community centers, and programs that engage the community. Including examples like community gardens or collaborative projects would be good.
+
+Then, honoring history. Perhaps mention historical landmarks or connecting"
+61,Reasoning,Qwen3-0.6B-q0f32-MLC,577,11004,37,108,9.81,Instruction-heavy,false,"<think>
+Okay, I need to create a Python function called calculate_compound_interest. Let me think about the parameters and the formula. The function needs to accept principal, rate, times_compounded, and years. The return value is the final amount. 
+
+First, the formula for compound interest. I remember that the formula is A = P * (1 + r/n)^(nt), where P is principal, r is rate, n is the number of times compounded per year, and t is the time in years. So, in this case, n is times_compounded and t is years.
+
+Wait, but the parameters are principal, rate, times_compounded, and years. So the function should take those four arguments. The doc"
+62,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,814,11127,43,122,10.96,Instruction-heavy,true,"<think>
+Okay, the user wants a detailed list of instructions on configuring a new email account in Microsoft Outlook. Let me start by recalling the steps involved. First, adding the account. I need to make sure the user knows to go to the Mail menu, then the Account settings. Next, setting up IMAP/POP3. For each, I should mention the server details. Also, configuring server ports. Incoming and outgoing mail. Let me check if I missed anything. Oh, maybe the user needs to set up the domain and password. Also, confirm that the ports are correct. Let me structure each step with numbers and clear headings. Make sure the instructions are numbered and easy to follow. I think that covers it. Let me put"
+63,Role-based,Qwen3-0.6B-q4f32_1-MLC,275,2340,42,93,39.74,Instruction-heavy,false,"<think>
+Okay, the user wants a vegetarian lasagna recipe formatted with numbered instructions, ingredients, and a 'Chef's Notes' section. Let me start by outlining the structure.
+
+First, I need to list the ingredients with precise quantities. Common ingredients for lasagna include flour, eggs, milk, butter, and maybe some cheese. Let me check the quantities. For example, 1 cup flour, 1 egg, 1/4 cup milk, 1/4 cup butter, 1/8 cup cheese, 1/8 cup salt, 1/8 cup sugar. That should be precise.
+
+Next, the numbered list of instructions. Start with the steps: 1. Preparing the dough, 2. Making"
+64,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,615,10547,47,91,8.63,Instruction-heavy,true,"<think>
+Okay, I need to create a JSON object for a product listing. Let me start by recalling the required keys: product_id, name, price, in_stock, tags, and dimensions. The dimensions need to be a nested object with height, width, depth as integers.
+
+First, product_id. Maybe a unique number. Let's say 12345. Name could be something like ""Wireless Bluetooth Headphones"". Price is a float, so maybe 49.99. In_stock is true. Tags could be [""technology"", ""wireless"", ""headphones""]. Dimensions: height 4, width 5, depth 3. All these values need to be plausible.
+
+Wait, are there any constraints"
+65,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,503,9918,44,109,10.99,Instruction-heavy,true,"<think>
+Okay, the user wants a step-by-step guide for a basic SEO audit for a small business. They specified three sections: On-Page, Off-Page, and Technical SEO. Each section needs at least three actionable steps. Let me start by breaking down each section.
+
+Starting with On-Page SEO. I should think about the key elements that a small business website needs. Maybe start with on-page elements like meta tags, headers, content quality. The user mentioned three steps here. Let me list three: optimizing meta tags, improving headers, and ensuring content is relevant. That's three steps.
+
+Next, Off-Page SEO. This is about external factors. The user wants actionable steps. Common ones include backlink analysis, social"
+66,Factual,Qwen3-0.6B-q4f32_1-MLC,315,2573,50,109,42.36,Instruction-heavy,false,"<think>
+Okay, let's tackle this summary request. The user wants exactly three paragraphs, each with specific points: first introducing the main character and profession, then describing the mission's layers, and finally explaining the ending. They also avoid the word 'dream'.
+
+First paragraph: Introduce the main character, maybe a thief or someone with a hidden identity. Use ""Inception"" as the movie name. Mention their profession and the mystery they face. Need to be concise.
+
+Second paragraph: Describe the central mission and layers. Explain how the protagonist navigates different dimensions, the layers of reality, and the challenge of reality itself. Use technical terms if possible, like ""dual existence"" and ""trickery"".
+
+Third paragraph: Explain the ambiguous"
+67,Creative,Qwen3-0.6B-q4f32_1-MLC,287,2532,50,117,46.21,Instruction-heavy,false,"<think>
+Okay, I need to write a shell script that backs up a specified directory to a compressed tar.gz file. The script should accept the source directory and the destination file as command-line arguments. Also, it needs to check if the source directory exists and handle that.
+
+First, I remember that in Unix, the `tar` command is used for creating and managing tar archives. So, the script should probably use `tar` with appropriate options. Let me think about the options. The `--create` option creates the file, and `--file` specifies the output file. But how to handle the source directory?
+
+Wait, the user mentioned that the script should accept the source directory and the destination file as command-line arguments. Oh right"
+68,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,480,9470,46,113,11.93,Instruction-heavy,true,"<think>
+Okay, the user wants a markdown guide for setting up 2FA using an authenticator app. Let me start by breaking down the requirements. They need headings, bold text, and code blocks. The guide should cover finding security settings, scanning a QR code, and saving backup codes.
+
+First, I should structure the guide with sections. Maybe start with the setup process. Then, each section can have headings. For example, ""Finding Security Settings"" and ""Scanning a QR Code"" and ""Saving Backup Codes"". Each section needs to have bold text for emphasis.
+
+For the code block, I need to provide example commands. Let me think about common authenticator apps. Maybe Google Authenticator or Authy. The example commands should"
+69,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,624,9497,54,103,10.85,Instruction-heavy,true,"<think>
+Okay, the user wants a formal meeting agenda for a quarterly business review (QBR). They specified the agenda items in order: Welcome & Introductions, Review of Q3 Goals & KPIs, Departmental Presentations (Sales, Marketing, Engineering), Q4 Goals & Strategy, and Open Floor & Next Steps. Each item needs a time duration.
+
+First, I need to structure the agenda properly. Let me start with the Welcome & Introductions. That should be a brief opening, maybe 10 minutes. Then the Review of Q3 Goals & KPIs. I should mention the time for that, maybe 20 minutes. Next, the Departmental Presentations. Each department needs their own section,"
+70,Factual,Qwen3-0.6B-q4f32_1-MLC,335,2851,55,103,36.13,Instruction-heavy,false,"<think>
+Okay, let's tackle this CSS problem. The user wants a simple blog post layout with specific classes and styles. Let me break down what's required.
+
+First, the main structure: body, container, h1, p, and blockquote. The container needs to be centered with a max-width. The blockquote should have a left border and a different font color. Let me think about each part.
+
+Starting with the container. Using a container class, maybe something like ""container"". Centered with max-width, so I'll use text-center and max-width: 80% or similar. That's a common approach for centering elements.
+
+The h1 should be the title. Probably a heading, so maybe h1 with"
+71,Creative,Qwen3-0.6B-q4f32_1-MLC,353,2440,56,119,48.77,Instruction-heavy,false,"<think>
+Okay, let's tackle this SQL query problem. The user wants to find the top 5 customers who spent the most money in an e-commerce database. The database has two tables: customers and orders. 
+
+First, I need to remember how to join these tables. The customers table has customer_id and name, and the orders table has order_id, customer_id, and amount. The goal is to find the top spending customers.
+
+So, the approach here is probably to join the orders table with the customers table on the customer_id. That way, we can get the customer information from both tables. Once we have the join, we need to group by the customer_id to get the total amount each customer has spent. Then, we"
+72,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,769,9599,53,126,13.13,Instruction-heavy,true,"<think>
+Okay, I need to create a set of instructions for assembling a basic bookshelf. The user wants it for someone with no experience, using simple language. Each step should mention a specific part and include a diagram description. Let me start by breaking down the components of a bookshelf.
+
+First, the main parts would be the sides, the shelves, the legs, and maybe the top. Let me think about the steps. Starting with the sides. The user mentioned using specific parts like Side Panel A and Shelf B. So maybe the first step is to assemble the sides. I need to explain how to attach the dowels to the side panel. The diagram should mention inserting the dowels into the holes on Side Panel A. That makes"
+73,Role-based,Qwen3-0.6B-q4f32_1-MLC,415,2838,62,119,41.93,Instruction-heavy,false,"<think>
+Okay, let's tackle this request. The user wants to format a block of text as a YAML configuration file for a CI/CD pipeline with specific stages and conditions.
+
+First, I need to structure the YAML correctly. The pipeline has three stages: build, test, and deploy. Each stage has its own actions. The build stage needs a script command. The test stage should run a test suite, and the deploy stage has conditions based on previous stages.
+
+I should start by defining the YAML structure. Using a YAML block, maybe starting with a key like ""pipeline"". Each stage can be a separate section. For the build stage, include the script command. The test stage could be a command like ""echo 'test suite'""."
+74,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,360,9318,53,117,12.56,Instruction-heavy,true,"<think>
+Okay, the user wants a detailed step-by-step tutorial on changing a flat tire. Let me start by recalling the basic steps. First, they need to check if the tire is flat. Then, they need to get the car on the ground safely. Safety is crucial here, so I should mention using the parking brake. 
+
+Next, the tools required. I should list all necessary items: spare tire, jack, lug wrench, tire pressure gauge, and maybe a spare tire. Wait, the user mentioned a list, so I need to make sure that's included. Also, safety precautions like using the parking brake and turning off the engine. 
+
+Now, the steps. Starting with checking the tire. Then, getting the car on"
+75,Creative,Qwen3-0.6B-q4f32_1-MLC,315,2926,50,95,32.47,Instruction-heavy,false,"<think>
+Okay, I need to write a regular expression that validates a strong password. Let me break down the requirements.
+
+First, the password length must be between 8 and 16 characters. So I'll use a range check with the ^ and $ symbols. Then, there's at least one uppercase letter, one lowercase letter, one digit, and one special character from the set !@#$%^&*.
+
+Let me think about each part. The uppercase letters are A-Z, so I can use [A-Z]. Lowercase is a-z, so [a-z]. Digits are 0-9, so [0-9]. Special characters: !@#$%^&*.
+
+Putting it all together, the regex should"
+76,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,505,9441,52,121,12.82,Instruction-heavy,true,"<think>
+Okay, the user wants a user manual excerpt for a smart thermostat. They specified using bullet points, including screenshots descriptions, and covering setting time, temperature, and selecting days of the week. Let me start by outlining the main steps.
+
+First, the user needs to create a new heating schedule. The steps should be clear. Let me think about the order. Usually, you go through the menu, select the time, set the temperature, and then choose the days. Maybe start with the main screen, then the scheduling menu. 
+
+For the time, the user should set the current time. Then the temperature. Need to mention that the thermostat will use that. Then the days of the week. Each day has a specific temperature. Maybe"
+77,Reasoning,Qwen3-0.6B-q0f32-MLC,494,9496,44,107,11.27,Instruction-heavy,false,"<think>
+Okay, the user wants a LaTeX code snippet for a simple mathematics document. It needs to be an article class, include amsmath, and have a numbered equation for the quadratic formula. Also, below the equation, add a sentence explaining the formula's purpose.
+
+First, I should start by setting up the article class. The standard article class is usually sufficient, but maybe I should check if the user wants a specific version. Since they mentioned amsmath, I'll include that. So the first line would be \documentclass{article} with amsmath.
+
+Next, the equation. The quadratic formula is x = [-b ± sqrt(b² - 4ac)] / (2a). I need to number this equation"
+78,Creative,Qwen3-0.6B-q4f32_1-MLC,326,2927,40,109,37.24,Instruction-heavy,false,"<think>
+Okay, the user wants me to write a set of rules for a new board game. Let me start by understanding the requirements. They specified sections: Objective, Number of Players, Components, Setup, Gameplay, and Winning Conditions. The game needs to be simple and complete.
+
+First, the Objective section. I should define what the game's main goal is. Maybe something like ""Building a castle with the most resources and skills in the shortest time possible."" That's clear and simple.
+
+Next, the Number of Players. The user mentioned ""Number of Players"" so I'll include that. Possible options: 2, 3, 4, or 5. Need to list them with explanations.
+
+Components section. What elements or pieces"
+79,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,494,9539,50,120,12.58,Instruction-heavy,true,"<think>
+Okay, the user wants a detailed guide on propagating a snake plant from a leaf cutting. Let me start by recalling the steps. First, they mentioned selecting a healthy leaf. I should make sure to emphasize choosing a mature, firm leaf without any signs of disease. Maybe mention the size and color to ensure it's suitable.
+
+Next, cutting the leaf. I need to specify the method. Using a clean, sharp knife or scissors is important. I should note that the leaf should be cut at a 45-degree angle to promote root development. Also, making sure the leaf is not damaged or bruised.
+
+Then, letting the leaf callous over. The user might not know about this step. I should explain that this process"
+80,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,696,9793,34,106,10.82,Instruction-heavy,true,"<think>
+Okay, the user wants a template for a professional project status report email. Let me start by understanding the requirements. The template needs placeholders for specific fields: Project Name, Date, Key Accomplishments, Upcoming Tasks, Blockers/Issues, and Next Steps. The tone should be formal and concise.
+
+First, I need to structure the email. Typically, project status reports have a subject line, greeting, body paragraphs, and closing. The placeholders should be integrated naturally. Let me think about the sections. The subject line should be clear, maybe something like ""Project Status Report: [Project Name]"". The greeting is usually ""Dear [Recipient's Name/Team]"".
+
+In the body, the first paragraph should introduce the report"
+81,Creative,Qwen3-0.6B-q4f32_1-MLC,354,2863,40,115,40.17,Creative,true,"<think>
+Okay, the user wants a short story about a librarian who finds a book that writes itself, predicts a minor event, and ends with the librarian deciding on what to do with it. Let me break this down.
+
+First, the story needs to be around 300 words. That's a tight timeframe. I should keep it concise but engaging. The main character is the librarian, so their perspective is key.
+
+The librarian discovers the book. I need to set up the discovery in a way that shows their curiosity. Maybe they're in a library, and the book starts to self-predict. That's a common trope in stories, so that's a good hook.
+
+The book's self-predicting feature is the main event"
+82,Creative,Qwen3-0.6B-q4f32_1-MLC,292,2546,43,106,41.63,Creative,true,"<think>
+Okay, the user wants a poem about the silence of a forest after heavy snowfall. Let me break down the requirements. They mentioned using sensory details: muffled sounds, visual of white on white, feeling of cold, crisp air. It needs to be at least 12 lines.
+
+First, I need to think about how to incorporate each of these elements. Sensory details usually involve describing sights, sounds, smells, and feelings. So, maybe start with the visual of the snow-covered forest. Use words like ""white,"" ""crisp,"" ""muffled,"" ""crisp air.""
+
+Muffled sounds: That could be the sounds of the forest, like the wind, or maybe the animals in the trees. Visuals"
+83,Creative,Qwen3-0.6B-q4f32_1-MLC,194,2561,33,118,46.08,Creative,true,"<think>
+Okay, the user wants me to invent a new holiday called 'The Day of Lost Things'. I need to describe its traditions, the food, and the story behind it, and what people do on this day to celebrate.
+
+First, I should come up with a unique name. Maybe something that captures the theme of lost things. ""Lost Things"" sounds good, but maybe ""The Day of Lost Things"" is the name. 
+
+For traditions, maybe it's about connecting with lost memories or experiences. How to structure that? Maybe activities like storytelling, creating art, or visiting places that remind them of the past. 
+
+Food ideas: maybe something that symbolizes lost things. Could be a mix of traditional and local ingredients, like a"
+84,Creative,Qwen3-0.6B-q4f32_1-MLC,189,2509,32,106,42.25,Creative,true,"<think>
+Okay, the user wants a short dialogue between two ancient statues in a forgotten garden. They have been watching the world change for centuries. Let me start by setting up the scene. The garden should feel ancient, maybe with some mystical elements.
+
+I need to create two characters. Let's name them, maybe something like ""Erythra"" and ""Thalos"". They should have distinct personalities. Erythra might be more analytical, while Thalos is more introspective.
+
+For their conversation, they should address each other's perspectives. Erythra could be talking about the world's changes, maybe the rise of a powerful force. Thalos might be concerned about the balance they've been maintaining. They can"
+85,Factual,Qwen3-0.6B-q4f32_1-MLC,189,2527,32,115,45.51,Creative,false,"<think>
+Okay, the user wants me to describe a city inside a giant, hollowed-out redwood tree. Let me start by breaking down the key elements they mentioned.
+
+First, the architectural features. A vertical city inside a tree... that's a unique concept. Maybe the tree is a vertical structure, like a treehouse. The buildings could be designed with vertical elements, like spirals or cubes. Using materials like wood and metal could create interesting designs. Maybe some floating elements or floating structures?
+
+Next, how the inhabitants travel between levels. If it's a vertical city, maybe they use stairs or elevated walkways. Or maybe there's a system of tunnels or bridges. Since it's inside a tree, maybe they use the tree's"
+86,Role-based,Qwen3-0.6B-q4f32_1-MLC,286,2539,41,113,44.51,Creative,false,"<think>
+Okay, the user wants me to write a stand-up comedy routine from a robot's perspective, highlighting human behavior, logic, and the robot's own experience. Let me break this down.
+
+First, the robot's perspective. Since it's a robot, the humor should be relatable, maybe touching on common human experiences. The robot's own experience could involve its own logic or the world around it. The jokes need to blend these elements.
+
+I should start with a welcoming statement, then introduce the topic. Maybe use phrases like ""Today is a day of..."" to set the scene. Then, structure the jokes around different themes: human behavior, logic, and the robot's own experience.
+
+For human behavior, maybe talk about how people"
+87,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,499,9673,37,122,12.61,Creative,false,"<think>
+Okay, the user wants a logbook entry from the captain of an interstellar colony ship. The entry needs to describe the moment they finally receive a message from a colony 20 years ago. Let me start by setting the scene. The logbook entry should be formal and detailed, capturing the emotions and significance of the message.
+
+First, I need to establish the time and location. The message came back 20 years ago, so the log should mention that. The colony was established on a distant planet, so the logbook entry should reflect the excitement and anticipation of the captain.
+
+I should include specific details about the message. Maybe the message was in a special form, like a hologram or a decoded message. The captain"
+88,Creative,Qwen3-0.6B-q4f32_1-MLC,240,3031,40,128,42.23,Creative,true,"<think>
+Okay, the user wants me to write the opening chapter of a fantasy novel where the main character is a cartographer who discovers that maps can create places instead of just representing them. The chapter ends with them accidentally drawing something into existence.
+
+First, I need to set up the protagonist's character. The main character is a cartographer, so maybe they have a profession that's both their calling and a challenge. The discovery of maps creating places is a twist. I should introduce that in the opening, showing their initial confusion and then the revelation.
+
+The chapter needs to have a climax where they accidentally draw something. That should be a turning point. Maybe the drawing becomes a magical element, leading to some consequences. The ending should leave the reader"
+89,Creative,Qwen3-0.6B-q4f32_1-MLC,283,2568,42,118,45.95,Creative,true,"<think>
+Okay, the user wants me to imagine a world where emotions manifest as physical colors, and create a scene from a courtroom where a lawyer is cross-examining a witness. The judge and jury can see the colors of their lies, fear, and anger. Let me break this down.
+
+First, I need to set up the world. How do emotions manifest? Maybe through a physical form or a device. Let's say there's a system where emotions are converted into colors. The colors could be different based on the person's state: red for fear, green for anger, blue for trust, etc. The colors would be linked to the person's emotions, and maybe some form of feedback or reaction.
+
+Now, the courtroom scene:"
+90,Creative,Qwen3-0.6B-q4f32_1-MLC,204,2581,38,116,44.94,Creative,true,"<think>
+Okay, the user wants a song lyric about a ghost haunting a coffee shop. The key points are that the ghost is not out of malice but because they miss the coffee and conversation. The tone needs to be melancholic but also a touch of whimsy.
+
+First, I need to structure the song with verses and a chorus. Let me start with the chorus. It should encapsulate the main theme: the ghost's reason and the emotions involved. Maybe use metaphors related to the coffee and conversation.
+
+For the verses, each verse can introduce different aspects of the ghost's experience. Maybe start with the coffee shop setting, then the haunting, then the emotions. Use words like ""echoes,"" ""whispers,"" ""taste"
+91,Role-based,Qwen3-0.6B-q4f32_1-MLC,285,2609,40,113,43.31,Creative,false,"<think>
+Okay, the user wants me to write a product description for a magical item in a fantasy market. They mentioned examples like 'Pocket of Eternal Sunshine' or 'Quill that Writes Only Truths'. Let me start by understanding the key elements they need.
+
+First, the description needs to be enticing. So, I should create a story-like description that grabs attention. It should hint at the item's powers and include a cryptic warning. The example given uses a magical item, so I can structure the same format.
+
+I should start with an engaging title. Maybe something like ""Ethereal Wisp of Time's Echo"". Then, describe the item's features. Mention the power, like ""whispers of ancient magic"" or """
+92,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,338,9732,29,121,12.43,Creative,false,"<think>
+Okay, the user wants a myth about why the ocean has tides. They mentioned gods, spirits, or mythical creatures and include a moral or lesson. Let me start by brainstorming some elements. Tides are caused by the moon's gravitational pull, but maybe I can add more mythical elements.
+
+Maybe a story where a god or a spirit is involved. The moon is a key element here. Let me think of a character. Perhaps a celestial being, like a goddess of the sea. The moon's phases could be a part of the story. 
+
+Wait, the user wants a moral. Maybe the lesson is about balance or harmony. The ocean's tides are a result of natural forces, but perhaps the story can show that"
+93,Factual,Qwen3-0.6B-q4f32_1-MLC,242,3033,41,124,40.88,Creative,false,"<think>
+Okay, the user wants me to describe the experience of a person who was born deaf hearing for the first time with a new implant. They mentioned focusing on the overwhelming and confusing nature of the sensory input. Let me start by breaking down the key points.
+
+First, the person is completely deaf, so their sensory input is non-existent. Now, they receive a new implant that allows them to hear. That's a big shift. I need to capture the initial confusion and the unexpected nature of hearing. 
+
+I should mention the sensory input: the world around them is different. Without hearing, they might not notice sounds, but with this implant, they start to experience sounds. That's a mix of surprise and awe. 
+
+The user wants"
+94,Creative,Qwen3-0.6B-q4f32_1-MLC,185,2526,35,115,45.53,Creative,true,"<think>
+Okay, the user wants a script for a short, silent film about a small robot watering a plant on a desolate Mars colony. They specified no dialogue, just actions and expressions. Let me break this down.
+
+First, I need to create a narrative that's all about the robot's actions. Since it's silent, the story should be told through the robot's movements, interactions, and expressions. The setting is a Mars colony, so I should include elements like the environment, the plant, and the robot's tasks.
+
+I should start with the robot's perspective. Maybe show how it's interacting with the plant, the environment, and the colony's state. Use specific actions and expressions to convey emotions or thoughts. Since there's"
+95,Factual,Qwen3-0.6B-q4f32_1-MLC,197,2596,31,123,47.38,Creative,false,"<think>
+Okay, the user wants me to invent a new sport on the moon, taking advantage of low gravity. Let me start by thinking about how to approach this.
+
+First, I need to come up with a sport that's feasible on the moon. Low gravity might make it easier for some activities, like weight training or sports. Maybe something that can be done with minimal equipment. Let's brainstorm ideas.
+
+What sports can be done with low gravity? Maybe a sport that uses the moon's surface, like a relay or a team sport. Or maybe a sport that involves the moon's gravity, like a race. Wait, the user mentioned low gravity, so maybe a sport that uses the moon's surface, like a relay or a team sport"
+96,Creative,Qwen3-0.6B-q4f32_1-MLC,190,2584,32,113,43.73,Creative,true,"<think>
+Okay, the user wants me to write a letter from a future historian explaining what our current era is most remembered for 500 years from now, with the historian's perspective being surprising and insightful. Let me break this down.
+
+First, I need to understand the structure. The letter should start with the historian's name, address, and maybe a date. Then, the letter should be from the future historian's perspective, so it's a forward-looking statement. The user mentioned 500 years from now, so the current era's 500 years from now would be 500 years into the future, which is a long time. The historian needs to be surprising, so maybe they expect a different perspective"
+97,Instruction-heavy,Qwen3-0.6B-q0f32-MLC,419,9590,32,114,11.89,Creative,false,"<think>
+Okay, the user wants a menu for a fictional restaurant that serves food from different universes. They specified Hogwarts, Panem, and the Shire. Let me start by brainstorming each of these places.
+
+Hogwarts is a magical place, so maybe a magical herb stew? That's a common dish there. I need to describe it with some magical elements. Maybe mention enchanted ingredients and a magical atmosphere.
+
+Panem is a fictional country, so maybe a spicy stew. The Shire is a fantasy land, so a roasted lamb dish. Each dish should have creative descriptions. Also, the user wants appetizers, main courses, and desserts. Let me make sure each section is covered.
+
+I should check if the descriptions are engaging"
+98,Creative,Qwen3-0.6B-q4f32_1-MLC,185,3306,35,122,36.90,Creative,true,"<think>
+Okay, the user wants me to write a short story from the perspective of a child's imaginary friend who is fading away as the child grows up. The story needs to explore feelings of nostalgia, purpose, and gentle acceptance. Let me break this down.
+
+First, I need to set up the story. The child is talking to their imaginary friend, so the voice should be a bit of a narrator. The child is growing up, and the friend is fading. The story should show the child's emotions as they become more connected to the friend.
+
+Nostalgia is important here. Maybe the child is thinking back to the friend's past, like when they were a child. Purpose and acceptance—maybe the child finds a way to"
+99,Factual,Qwen3-0.6B-q4f32_1-MLC,183,2503,32,122,48.74,Creative,false,"<think>
+Okay, the user wants me to describe a color that doesn't exist. Let me start by thinking about colors that are common in nature or the universe. Wait, there's the color of the sky, which is blue. But the user is asking for something else. Maybe I should think of a color that's not a standard one, like a shade that's beyond our current understanding.
+
+Wait, the user might be expecting a creative answer. Let me think of a color that's not in the spectrum. Maybe something like the color of a star's surface, which is a mix of different colors. Or perhaps a color that represents something beyond the physical, like emotions or reality.
+
+Wait, the user might be expecting a name. Let"
+100,Creative,Qwen3-0.6B-q4f32_1-MLC,302,2727,43,123,45.10,Creative,true,"<think>
+Okay, the user wants me to write a journal entry from a dragon who stopped hoarding gold and started a peaceful hobby. Let me break this down.
+
+First, the dragon's past life is important. I should mention that they once had a golden life, maybe with power or wealth, and then they changed. The entry needs to reflect on their new journey, finding joy in their simpler existence.
+
+I need to include elements of their past and present. Maybe start with a reflection on their past, like how they used to hoard gold, and then transition to their current hobby. Use specific examples, like gardening or painting, to show their new activity.
+
+Also, the user wants it to be a journal entry, so structure it with"

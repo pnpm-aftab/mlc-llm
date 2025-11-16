@@ -40,7 +40,7 @@ struct BenchmarkView: View {
                 ProgressView(value: runner.progress)
                     .frame(maxWidth: 200)
             }
-            
+
             HStack {
                 Toggle("Limit to 20 prompts", isOn: $runner.limitPrompts)
                     .disabled(runner.running)
