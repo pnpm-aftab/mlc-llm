@@ -326,3 +326,6 @@ dist
 
 # cursor
 .cursor/
+
+# results
+results/
