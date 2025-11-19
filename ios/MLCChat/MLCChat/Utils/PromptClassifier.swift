@@ -26,15 +26,15 @@ final class PromptClassifier {
     /// Classify the given text into one of the known categories.
     /// Uses the provided MLCEngine to run a short streamed completion.
     func classify(engine: MLCEngine, text: String) async -> String {
-        // Enhanced instruction prompt with clear category descriptions and examples
+        // Zero-shot classification prompt with category descriptions only (no examples)
         let systemInstruction = """
         You are a text classifier. Classify the input into exactly ONE category:
         
-        Factual: Facts, information, explanations, definitions, "What is", "How much", "When", "Where"
-        Reasoning: Logic puzzles, math, riddles, "solve", "calculate", "why", "How does", "analyze"
-        Creative: Storytelling, poetry, fiction, "write", "create a story", "compose", "imagine"
-        Instruction-heavy: Tutorials, guides, steps, "how to", "steps", "instructions", "recipe"
-        Role-based: Character acting, personas, "act as", "pretend", "role play", "imagine you are"
+        Factual: Facts, information, explanations, definitions, informational queries
+        Reasoning: Logic puzzles, mathematics, problem-solving, analytical questions
+        Creative: Storytelling, poetry, fiction, creative writing, imaginative content
+        Instruction-heavy: Tutorials, guides, step-by-step instructions, procedural content
+        Role-based: Character acting, personas, role-playing scenarios, identity-based prompts
         
         Output ONLY the exact category name. Nothing else.
         """
