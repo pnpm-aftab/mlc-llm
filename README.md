@@ -13,11 +13,11 @@
 
 </div>
 
-## About
+## Project Updates
+- Added an on-device energy/latency/thermal visualization toolkit for iPhone benchmarks (`results/energy/`), generating 13 publication-ready plots.
+- Updated data, scripts, and docs to reflect new plots (including 5a/5b/6a) and clarified metrics; see `results/energy/README.md` for details.
 
-+## Project Updates
-+- Added an on-device energy/latency/thermal visualization toolkit for iPhone benchmarks (`results/energy/`), generating 13 publication-ready plots.
-+- Updated data, scripts, and docs to reflect new plots (including 5a/5b/6a) and clarified metrics; see `results/energy/README.md` for details.
+## About
 
 MLC LLM is a machine learning compiler and high-performance deployment engine for large language models.  The mission of this project is to enable everyone to develop, optimize, and deploy AI models natively on everyone's platforms. 
 
