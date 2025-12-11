@@ -14,8 +14,10 @@
 </div>
 
 ## Project Updates
-- Added an on-device energy/latency/thermal visualization toolkit for iPhone benchmarks (`results/energy/`), generating 13 publication-ready plots.
-- Updated data, scripts, and docs to reflect new plots (including 5a/5b/6a) and clarified metrics; see `results/energy/README.md` for details.
+- Implemented the zero-shot prompt classifier (TinyLlama-based) and routing logic in iOS (`ios/MLCChat/MLCChat/Utils/PromptClassifier.swift`), enabling category-driven model selection.
+- Built and ran the on-device benchmark/experiment harness, with energy/latency/thermal instrumentation, plus post-hoc plots and slides.
+- Key files added/modified:
+  - Code: `ios/MLCChat/MLCChat/Utils/PromptClassifier.swift`, `ios/MLCChat/MLCChat/Utils/BenchmarkRunner.swift`
 
 ## About
 
